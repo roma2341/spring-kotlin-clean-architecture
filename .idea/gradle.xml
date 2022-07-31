@@ -13,10 +13,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/domain" />
+            <option value="$PROJECT_DIR$/application" />
             <option value="$PROJECT_DIR$/domain-api" />
             <option value="$PROJECT_DIR$/domain-implementation" />
             <option value="$PROJECT_DIR$/framework" />
+            <option value="$PROJECT_DIR$/framework/controllers" />
             <option value="$PROJECT_DIR$/usecase-api" />
             <option value="$PROJECT_DIR$/usecase-implementation" />
           </set>
@@ -29,7 +30,14 @@
         <option name="gradleJvm" value="corretto-17" />
         <option name="modules">
           <set>
+            <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/application" />
+            <option value="$PROJECT_DIR$/domain-api" />
+            <option value="$PROJECT_DIR$/domain-implementation" />
+            <option value="$PROJECT_DIR$/framework" />
+            <option value="$PROJECT_DIR$/framework/controllers" />
+            <option value="$PROJECT_DIR$/usecase-api" />
+            <option value="$PROJECT_DIR$/usecase-implementation" />
           </set>
         </option>
       </GradleProjectSettings>

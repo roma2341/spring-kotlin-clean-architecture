@@ -1,7 +1,10 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.6.20"
+    kotlin("jvm") version "1.7.20-Beta"
+    kotlin("plugin.spring") version "1.7.20-Beta"
+    id("org.springframework.boot")
+    id("io.spring.dependency-management") version "1.0.12.RELEASE"
 }
 
 group = "org.zigzag"
@@ -21,4 +24,20 @@ tasks.test {
 
 tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "17"
+}
+allprojects {
+    ext {
+        set("spring_boot_version", "2.7.2")
+        set("jetbrains_kotlin_version", "1.3.41")
+        set("junit_version", "5.8.1")
+    }
+    apply(plugin = "org.springframework.boot")
+    apply(plugin = "io.spring.dependency-management")
+}
+
+
+dependencyManagement {
+    dependencies {
+        dependency("org.springframework.boot:spring-boot-starter:${rootProject.extra.get("spring_boot_version")}")
+    }
 }
