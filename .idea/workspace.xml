@@ -5,21 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9457da8-6a61-4f3b-8c1c-7ea187b78d83" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/domain-implementation/src/main/java/com/zigzag/crm/framework/domain/features/user/CrmUser.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework/controllers/src/main/java/com/zigzag/crm/framework/controllers/config/ControllersConfig.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework/controllers/src/main/java/com/zigzag/crm/framework/controllers/features/user/CrmUserController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/application/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/settings.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/kotlin/com/zigzag/crm/application/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/kotlin/com/zigzag/crm/application/Application.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain-api/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/domain-api/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain-implementation/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/domain-implementation/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/framework/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/framework/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usecase-api/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/usecase-api/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usecase-implementation/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/usecase-implementation/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,9 +80,12 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.38505748",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "810775339cf871f81a6ad26dc833beca"
+    "spring.configuration.checksum": "cf8f185e1024b4cd9de8132a6d701d99"
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\zigzag\Documents\Projects\crm-clean-architecture\framework" />
@@ -167,7 +159,8 @@
       <workItem from="1659207390761" duration="415000" />
       <workItem from="1659211540790" duration="6723000" />
       <workItem from="1659220082484" duration="5418000" />
-      <workItem from="1659266900629" duration="8431000" />
+      <workItem from="1659266900629" duration="9890000" />
+      <workItem from="1659280174231" duration="135000" />
     </task>
     <servers />
   </component>
