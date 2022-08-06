@@ -2,6 +2,7 @@ package com.zigzag.crm.framework.controllers.features.user
 
 import org.springframework.http.MediaType
 import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.ResponseBody
 import org.springframework.web.bind.annotation.RestController
@@ -21,8 +22,7 @@ class CrmUserController {
         System.out.println("constucted");
     }
 
-    @GetMapping(path = ["/numbers"],
+    @PostMapping(path = ["/user"],
         produces = [MediaType.APPLICATION_STREAM_JSON_VALUE])
-    @ResponseBody
     fun getNumbers() = Flux.range(1, 100)
 }

@@ -13,6 +13,7 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-api:${rootProject.extra.get("junit_version")}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${rootProject.extra.get("junit_version")}")
     implementation(kotlin("stdlib", version = rootProject.extra.get("jetbrains_kotlin_version") as String))
+    implementation("org.springframework:spring-context")
 }
 
 tasks.getByName<Test>("test") {
