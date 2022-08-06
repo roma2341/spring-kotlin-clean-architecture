@@ -1,7 +1,12 @@
 package com.zigzag.crm.usecase.user
 
-class UsecaseCreateUser {
-    fun execute(request: UsecaseCreateUserRequest) {
+import com.zigzag.crm.usecase.api.IUsecase
+import com.zigzag.crm.usecase.api.IUsecaseNoArg
+import org.zigzag.repository.api.ICrmUserRepository
+
+class UsecaseCreateUser(private val userRepository: ICrmUserRepository): IUsecase<UsecaseCreateUserResponse,UsecaseCreateUserRequest>{
+    override fun execute(request: UsecaseCreateUserRequest):UsecaseCreateUserResponse {
+        return userRepository.createUser(request.user);
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 }

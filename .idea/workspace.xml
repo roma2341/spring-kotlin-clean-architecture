@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9457da8-6a61-4f3b-8c1c-7ea187b78d83" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository-api/src/main/java/org/zigzag/repository/api/ICrmUserRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usecase-implementation/src/main/java/com/zigzag/crm/usecase/user/UsecaseCreateUser.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repository-implementation/src/main/java/org/zigzag/repository/InMemoryCrmUserRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usecase-api/src/main/java/com/zigzag/crm/usecase/api/IUsecase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usecase-api/src/main/java/com/zigzag/crm/usecase/api/IUsecaseNoArg.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/controllers/src/main/java/com/zigzag/crm/framework/controllers/features/user/CrmUserController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/framework/controllers/src/main/java/com/zigzag/crm/framework/controllers/features/user/CrmUserController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-implementation/src/main/java/com/zigzag/crm/framework/domain/features/user/CrmUser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain-implementation/src/main/java/com/zigzag/crm/framework/domain/features/user/CrmUser.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository-api/src/main/java/org/zigzag/repository/api/ICrmUserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/repository-api/src/main/java/org/zigzag/repository/api/ICrmUserRepository.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase-api/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/usecase-api/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/usecase-implementation/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/usecase-implementation/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase-implementation/src/main/java/com/zigzag/crm/usecase/user/UsecaseCreateUser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/usecase-implementation/src/main/java/com/zigzag/crm/usecase/user/UsecaseCreateUser.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +88,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.38505748",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "cf8f185e1024b4cd9de8132a6d701d99"
+    "spring.configuration.checksum": "5f9b2274cf5df66149374385471983cb"
   }
 }]]></component>
   <component name="ReactorSettings">
@@ -97,6 +100,12 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\zigzag\Documents\Projects\crm-clean-architecture\framework" />
+    </key>
+    <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="org.zigzag.repository.api" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="org.zigzag.repository" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -170,7 +179,8 @@
       <workItem from="1659266900629" duration="9890000" />
       <workItem from="1659280174231" duration="546000" />
       <workItem from="1659338971547" duration="40000" />
-      <workItem from="1659815063141" duration="4399000" />
+      <workItem from="1659815063141" duration="6513000" />
+      <workItem from="1659823845166" duration="1536000" />
     </task>
     <servers />
   </component>
@@ -187,6 +197,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType" />
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

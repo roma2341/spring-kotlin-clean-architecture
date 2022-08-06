@@ -19,6 +19,7 @@
             <option value="$PROJECT_DIR$/framework" />
             <option value="$PROJECT_DIR$/framework/controllers" />
             <option value="$PROJECT_DIR$/repository-api" />
+            <option value="$PROJECT_DIR$/repository-implementation" />
             <option value="$PROJECT_DIR$/usecase-api" />
             <option value="$PROJECT_DIR$/usecase-implementation" />
           </set>
@@ -38,6 +39,7 @@
             <option value="$PROJECT_DIR$/framework" />
             <option value="$PROJECT_DIR$/framework/controllers" />
             <option value="$PROJECT_DIR$/repository-api" />
+            <option value="$PROJECT_DIR$/repository-implementation" />
             <option value="$PROJECT_DIR$/usecase-api" />
             <option value="$PROJECT_DIR$/usecase-implementation" />
           </set>

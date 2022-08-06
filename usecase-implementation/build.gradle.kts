@@ -1,5 +1,7 @@
 plugins {
     id("java")
+    kotlin("jvm")
+    kotlin("plugin.spring")
 }
 
 group = "org.zigzag"
@@ -14,6 +16,8 @@ dependencies {
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${rootProject.extra.get("junit_version")}")
     implementation(kotlin("stdlib", version = rootProject.extra.get("jetbrains_kotlin_version") as String))
     implementation("org.springframework:spring-context")
+    api(projects.usecaseApi)
+    api(projects.repositoryApi)
 }
 
 tasks.getByName<Test>("test") {
