@@ -7,7 +7,6 @@
     <list default="true" id="b9457da8-6a61-4f3b-8c1c-7ea187b78d83" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/src/main/kotlin/com/zigzag/crm/application/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/kotlin/com/zigzag/crm/application/Application.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/controllers/src/main/java/com/zigzag/crm/framework/controllers/config/ControllersConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/framework/controllers/src/main/java/com/zigzag/crm/framework/controllers/config/ControllersConfig.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,25 +62,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "C:/Users/zigzag/Documents/Projects/crm-clean-architecture/framework",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.38505748",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "cf8f185e1024b4cd9de8132a6d701d99"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/zigzag/Documents/Projects/crm-clean-architecture/framework&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.38505748&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;cf8f185e1024b4cd9de8132a6d701d99&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -159,7 +158,9 @@
       <workItem from="1659211540790" duration="6723000" />
       <workItem from="1659220082484" duration="5418000" />
       <workItem from="1659266900629" duration="9890000" />
-      <workItem from="1659280174231" duration="306000" />
+      <workItem from="1659280174231" duration="546000" />
+      <workItem from="1659338971547" duration="40000" />
+      <workItem from="1659815063141" duration="1019000" />
     </task>
     <servers />
   </component>
@@ -189,6 +190,15 @@
           <url>file://$PROJECT_DIR$/framework/controllers/src/main/java/com/zigzag/crm/framework/controllers/features/user/CrmUserController.kt</url>
           <line>15</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-function">
+          <url>file://$PROJECT_DIR$/framework/controllers/src/main/java/com/zigzag/crm/framework/controllers/features/user/CrmUserController.kt</url>
+          <line>26</line>
+          <properties class="com.zigzag.crm.framework.controllers.features.user.CrmUserController" method="getNumbers">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
