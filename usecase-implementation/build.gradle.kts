@@ -1,7 +1,10 @@
+import org.jetbrains.kotlin.kapt3.base.Kapt.kapt
+
 plugins {
     id("java")
     kotlin("jvm")
     kotlin("plugin.spring")
+    kotlin("kapt")
 }
 
 group = "org.zigzag"
@@ -16,6 +19,8 @@ dependencies {
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${rootProject.extra.get("junit_version")}")
     implementation(kotlin("stdlib", version = rootProject.extra.get("jetbrains_kotlin_version") as String))
     implementation("org.springframework:spring-context")
+    implementation("org.mapstruct:mapstruct:1.5.2.Final")
+    kapt("org.mapstruct:mapstruct-processor:1.5.2.Final")
     api(projects.usecaseApi)
     api(projects.repositoryApi)
 }
