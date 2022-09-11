@@ -5,5 +5,5 @@ import com.zigzag.crm.usecase.api.dto.user.CrmUserDto
 import org.springframework.stereotype.Component
 
 @Component
-interface IUsecaseCreateUser: IUsecase<CrmUserDto.Response.Public, CrmUserDto.Request.Create> {
+interface IUsecase_CreateUser: IUsecase<Mono<CrmUserDto.Response.Public>, CrmUserDto.Request.Create> {
 }

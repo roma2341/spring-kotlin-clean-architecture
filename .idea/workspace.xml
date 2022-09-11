@@ -5,24 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9457da8-6a61-4f3b-8c1c-7ea187b78d83" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usecase-api/src/main/kotlin/com/zigzag/crm/usecase/api/dto/user/CrmUserDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usecase-api/src/main/kotlin/com/zigzag/crm/usecase/api/feature/user/IUsecaseCreateUser.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usecase-implementation/src/main/kotlin/com/zigzag/crm/usecase/feature/user/UsecaseCreateUser.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usecase-implementation/src/main/kotlin/com/zigzag/crm/usecase/feature/user/mapper/CrmUserMapper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usecase-api/src/main/kotlin/com/zigzag/crm/usecase/api/feature/user/IUsecase_FindUserById.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usecase-implementation/src/main/kotlin/com/zigzag/crm/usecase/feature/user/Usecase_FindUserById.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/application/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain-implementation/src/main/java/com/zigzag/crm/framework/domain/features/user/CrmUser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain-api/src/main/kotlin/com/zigzag/crm/framework/domain/api/features/user/CrmUser.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/controllers/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/framework/controllers/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/controllers/src/main/java/com/zigzag/crm/framework/controllers/features/user/CrmUserController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/framework/controllers/src/main/java/com/zigzag/crm/framework/controllers/features/user/CrmUserController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository-api/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/repository-api/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository-api/src/main/java/org/zigzag/repository/api/ICrmUserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/repository-api/src/main/java/org/zigzag/repository/api/ICrmUserRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository-implementation/src/main/java/org/zigzag/repository/InMemoryCrmUserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/repository-implementation/src/main/java/org/zigzag/repository/InMemoryCrmUserRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usecase-implementation/src/main/kotlin/com/zigzag/crm/usecase/user/UsecaseCreateUser.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usecase-implementation/src/main/kotlin/com/zigzag/crm/usecase/user/converter/CrmUserMapper.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usecase-implementation/src/main/kotlin/com/zigzag/crm/usecase/user/dto/CrmUserDto.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/controllers/src/main/java/com/zigzag/crm/framework/controllers/config/ControllersConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/framework/controllers/src/main/kotlin/com/zigzag/crm/framework/controllers/config/ControllersConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/controllers/src/main/java/com/zigzag/crm/framework/controllers/features/user/CrmUserController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/framework/controllers/src/main/kotlin/com/zigzag/crm/framework/controllers/features/user/CrmUserController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository-api/src/main/java/org/zigzag/repository/api/ICrmUserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/repository-api/src/main/kotlin/com/zigzag/crm/repository/api/ICrmUserRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository-implementation/src/main/java/org/zigzag/repository/InMemoryCrmUserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/repository-implementation/src/main/kotlin/com/zigzag/crm/repository/InMemoryCrmUserRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase-api/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/usecase-api/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase-api/src/main/kotlin/com/zigzag/crm/usecase/api/feature/user/IUsecaseCreateUser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/usecase-api/src/main/kotlin/com/zigzag/crm/usecase/api/feature/user/IUsecase_CreateUser.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase-implementation/src/main/kotlin/com/zigzag/crm/usecase/feature/user/UsecaseCreateUser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/usecase-implementation/src/main/kotlin/com/zigzag/crm/usecase/feature/user/Usecase_CreateUser.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +44,17 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="crm-clean-architecture" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="crm-clean-architecture" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="crm-clean-architecture" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -113,10 +116,10 @@
     "jdk.selected.JAVA_MODULE": "corretto-17",
     "last_opened_file_path": "C:/Users/zigzag/Documents/Projects/crm-clean-architecture/framework",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.38505748",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "spring.configuration.checksum": "6028d07f9f01b113d6dd70541d0478d6"
   }
 }]]></component>
@@ -134,6 +137,7 @@
       <recent name="org.zigzag.repository.api" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.zigzag.crm.repository.api" />
       <recent name="com.zigzag.crm.framework.domain.api.features.user" />
       <recent name="com.zigzag.crm.usecase.api.dto.user" />
       <recent name="org.zigzag.repository" />
@@ -253,8 +257,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.application [bootRun]" />
         <item itemvalue="Gradle.crm-clean-architecture [bootRun]" />
+        <item itemvalue="Gradle.application [bootRun]" />
         <item itemvalue="Gradle.crm-clean-architecture [kaptKotlin]" />
         <item itemvalue="Gradle.application [build]" />
       </list>
@@ -283,7 +287,7 @@
       <workItem from="1660489350693" duration="1217000" />
       <workItem from="1660548573012" duration="1166000" />
       <workItem from="1662891261167" duration="13698000" />
-      <workItem from="1662919182111" duration="702000" />
+      <workItem from="1662919182111" duration="8736000" />
     </task>
     <servers />
   </component>

@@ -16,6 +16,7 @@ dependencies {
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${rootProject.extra.get("junit_version")}")
     implementation(kotlin("stdlib", version = rootProject.extra.get("jetbrains_kotlin_version") as String))
     implementation("org.springframework:spring-context")
+    implementation("org.springframework.boot:spring-boot-starter-webflux")
 }
 
 tasks.getByName<Test>("test") {
