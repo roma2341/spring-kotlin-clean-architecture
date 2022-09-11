@@ -26,6 +26,8 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/application" />
         <option name="gradleHome" value="D:/Program Files/gradle-7.4-bin/gradle-7.4" />

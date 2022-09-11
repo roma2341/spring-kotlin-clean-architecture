@@ -1,5 +1,8 @@
 package com.zigzag.crm.framework.controllers.features.user
 
+import com.zigzag.crm.usecase.api.dto.user.CrmUserDto
+import com.zigzag.crm.usecase.api.feature.user.IUsecaseCreateUser
+import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.MediaType
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping
@@ -11,18 +14,16 @@ import reactor.core.publisher.Mono
 import javax.annotation.PostConstruct
 
 @RestController
-@RequestMapping("/user")
-class CrmUserController {
-    constructor()  {
-        System.out.println("constucted");
-    }
+@RequestMapping("/users")
+class CrmUserController( private val usecaseCreateUser: IUsecaseCreateUser){
 
     @PostConstruct
     fun postConstruct(){
         System.out.println("constucted");
     }
 
-    @PostMapping(path = ["/user"],
-        produces = [MediaType.APPLICATION_STREAM_JSON_VALUE])
-    fun getNumbers() = Flux.range(1, 100)
+    @PostMapping
+    fun addUser(userModel: CrmUserDto.Request.Create):CrmUserDto.Response.Public {
+        return usecaseCreateUser.execute(userModel);
+    }
 }
