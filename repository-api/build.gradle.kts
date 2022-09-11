@@ -17,6 +17,7 @@ dependencies {
     implementation(kotlin("stdlib"))
     implementation("org.springframework:spring-context")
     api(projects.domainApi)
+    implementation("org.springframework.boot:spring-boot-starter-webflux")
 }
 
 tasks.getByName<Test>("test") {

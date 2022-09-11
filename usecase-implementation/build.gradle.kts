@@ -23,6 +23,7 @@ dependencies {
     kapt("org.mapstruct:mapstruct-processor:1.5.2.Final")
     api(projects.usecaseApi)
     api(projects.repositoryApi)
+    implementation("org.springframework.boot:spring-boot-starter-webflux")
 }
 
 tasks.getByName<Test>("test") {
