@@ -7,7 +7,7 @@ plugins {
     id("io.spring.dependency-management") version "1.0.12.RELEASE"
 }
 
-group = "org.zigzag"
+group = "com.zigzag.crm"
 version = "1.0-SNAPSHOT"
 
 repositories {

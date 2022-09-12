@@ -1,0 +1,4 @@
+mongo:
+  db:
+    connection: mongodb://joe:password@10.128.3.4.23:27017/ecosystem
+    name: ecosystem

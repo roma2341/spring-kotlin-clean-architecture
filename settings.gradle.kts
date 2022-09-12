@@ -20,3 +20,5 @@ pluginManagement {
 }
 include("repository-api")
 include("repository-implementation")
+include("framework:dao")
+findProject(":framework:dao")?.name = "dao"

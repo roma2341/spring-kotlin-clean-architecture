@@ -4,7 +4,7 @@ plugins {
     kotlin("plugin.spring")
 }
 
-group = "org.zigzag"
+group = "com.zigzag.crm"
 version = "1.0-SNAPSHOT"
 
 repositories {

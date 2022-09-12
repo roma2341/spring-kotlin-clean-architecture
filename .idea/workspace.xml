@@ -5,17 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9457da8-6a61-4f3b-8c1c-7ea187b78d83" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/framework/dao/src/main/kotlin/com/zigzag/crm/framework/dao/user/config/CrmDaoConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/controllers/src/main/kotlin/com/zigzag/crm/framework/controllers/features/user/CrmUserController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/framework/controllers/src/main/kotlin/com/zigzag/crm/framework/controllers/features/user/CrmUserController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-api/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/domain-api/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-implementation/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/domain-implementation/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/framework/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/controllers/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/framework/controllers/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repository-api/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/repository-api/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository-api/src/main/kotlin/com/zigzag/crm/repository/api/ICrmUserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/repository-api/src/main/kotlin/com/zigzag/crm/repository/api/ICrmUserRepository.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repository-implementation/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/repository-implementation/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository-implementation/src/main/kotlin/com/zigzag/crm/repository/InMemoryCrmUserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/repository-implementation/src/main/kotlin/com/zigzag/crm/repository/InMemoryCrmUserRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usecase-api/src/main/kotlin/com/zigzag/crm/usecase/api/feature/user/IUsecase_CreateUser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/usecase-api/src/main/kotlin/com/zigzag/crm/usecase/api/feature/user/IUsecase_CreateUser.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usecase-api/src/main/kotlin/com/zigzag/crm/usecase/api/feature/user/IUsecase_FindUserById.kt" beforeDir="false" afterPath="$PROJECT_DIR$/usecase-api/src/main/kotlin/com/zigzag/crm/usecase/api/feature/user/IUsecase_FindUserById.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase-api/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/usecase-api/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/usecase-implementation/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/usecase-implementation/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usecase-implementation/src/main/kotlin/com/zigzag/crm/usecase/feature/user/Usecase_CreateUser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/usecase-implementation/src/main/kotlin/com/zigzag/crm/usecase/feature/user/Usecase_CreateUser.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usecase-implementation/src/main/kotlin/com/zigzag/crm/usecase/feature/user/Usecase_FindUserById.kt" beforeDir="false" afterPath="$PROJECT_DIR$/usecase-implementation/src/main/kotlin/com/zigzag/crm/usecase/feature/user/Usecase_FindUserById.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,26 +99,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/zigzag/Documents/Projects/crm-clean-architecture/framework&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.38505748&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;ef6aae63afb162b1e95d08162c20f4f2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "last_opened_file_path": "C:/Users/zigzag/Documents/Projects/crm-clean-architecture/framework",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.38505748",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "72f5c95bc1edee9ff04529000ab31848"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -140,6 +143,7 @@
     <option name="myCommands">
       <command value="gradle build" />
       <command value="gradle build --info" />
+      <command value="gradle bootRun --debug" />
     </option>
   </component>
   <component name="RunDashboard">
@@ -149,7 +153,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.application [bootRun]">
+  <component name="RunManager" selected="Gradle.application [build]">
     <configuration name="application [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -255,6 +259,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Gradle.application [bootRun]" />
+      <item itemvalue="Gradle.application [build]" />
+      <item itemvalue="Gradle.crm-clean-architecture [bootRun]" />
+      <item itemvalue="Gradle.crm-clean-architecture [kaptKotlin]" />
+      <item itemvalue="Kotlin script (Beta).build.gradle.kts" />
+      <item itemvalue="Spring Boot.Application (1)" />
+      <item itemvalue="Spring Boot.Application" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.application [bootRun]" />
@@ -292,7 +305,10 @@
       <workItem from="1662929522502" duration="846000" />
       <workItem from="1662930425549" duration="1074000" />
       <workItem from="1662931519178" duration="1099000" />
-      <workItem from="1662932721226" duration="2150000" />
+      <workItem from="1662932721226" duration="2420000" />
+      <workItem from="1662983405084" duration="3300000" />
+      <workItem from="1662988616753" duration="220000" />
+      <workItem from="1662988850567" duration="606000" />
     </task>
     <servers />
   </component>
@@ -309,6 +325,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/framework/controllers/src/main/kotlin/com/zigzag/crm/framework/controllers/features/user/CrmUserController.kt</url>
+          <line>22</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
