@@ -5,36 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96c114a2-ce67-4722-8740-39d32f515c99" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/repository/config/CrmDaoConfig.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/application/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/kotlin/com/zigzag/crm/application/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/kotlin/com/zigzag/crm/application/Application.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain-api/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/domain/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain-api/src/main/kotlin/com/zigzag/crm/framework/domain/api/features/user/CrmUser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/kotlin/com/zigzag/crm/framework/domain/api/features/user/CrmUser.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain-implementation/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/framework/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/controllers/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/framework/controllers/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/controllers/src/main/kotlin/com/zigzag/crm/framework/controllers/config/ControllersConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/framework/controllers/src/main/kotlin/com/zigzag/crm/framework/controllers/config/ControllersConfig.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/controllers/src/main/kotlin/com/zigzag/crm/framework/controllers/features/user/CrmUserController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/framework/controllers/src/main/kotlin/com/zigzag/crm/framework/controllers/features/user/CrmUserController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/dao/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/dao/src/main/kotlin/com/zigzag/crm/framework/dao/user/config/CrmDaoConfig.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository-api/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/framework/repositories/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository-api/src/main/kotlin/com/zigzag/crm/repository/api/ICrmUserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/kotlin/com/zigzag/crm/framework/domain/api/repository/ICrmUserRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository-implementation/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository-implementation/src/main/kotlin/com/zigzag/crm/repository/InMemoryCrmUserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/repository/InMemoryCrmUserRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usecase-api/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usecase-api/src/main/kotlin/com/zigzag/crm/usecase/api/IUsecase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/usecases/src/main/kotlin/com/zigzag/crm/usecase/api/IUsecase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usecase-api/src/main/kotlin/com/zigzag/crm/usecase/api/IUsecaseNoArg.kt" beforeDir="false" afterPath="$PROJECT_DIR$/usecases/src/main/kotlin/com/zigzag/crm/usecase/api/IUsecaseNoArg.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usecase-api/src/main/kotlin/com/zigzag/crm/usecase/api/dto/user/CrmUserDto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/usecases/src/main/kotlin/com/zigzag/crm/usecase/api/user/dto/CrmUserDto.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usecase-api/src/main/kotlin/com/zigzag/crm/usecase/api/feature/user/IUsecase_CreateUser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/usecases/src/main/kotlin/com/zigzag/crm/usecase/api/user/IUsecase_CreateUser.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usecase-api/src/main/kotlin/com/zigzag/crm/usecase/api/feature/user/IUsecase_FindUserById.kt" beforeDir="false" afterPath="$PROJECT_DIR$/usecases/src/main/kotlin/com/zigzag/crm/usecase/api/user/IUsecase_FindUserById.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usecase-implementation/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/usecases/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usecase-implementation/src/main/kotlin/com/zigzag/crm/usecase/feature/user/Usecase_CreateUser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/usecases/src/main/kotlin/com/zigzag/crm/usecase/feature/user/Usecase_CreateUser.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usecase-implementation/src/main/kotlin/com/zigzag/crm/usecase/feature/user/Usecase_FindUserById.kt" beforeDir="false" afterPath="$PROJECT_DIR$/usecases/src/main/kotlin/com/zigzag/crm/usecase/feature/user/Usecase_FindUserById.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usecase-implementation/src/main/kotlin/com/zigzag/crm/usecase/feature/user/mapper/CrmUserMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/usecases/src/main/kotlin/com/zigzag/crm/usecase/feature/user/mapper/CrmUserMapper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/repositories/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/framework/repositories/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/repository/InMemoryCrmUserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/repository/InMemoryCrmUserRepository.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +28,9 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/application">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -62,19 +41,20 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="crm-clean-architecture" type="f1a62948:ProjectNode" />
+                <item name="application" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="crm-clean-architecture" type="f1a62948:ProjectNode" />
+                <item name="application" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="crm-clean-architecture" type="f1a62948:ProjectNode" />
+                <item name="application" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="application" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="crm-clean-architecture" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build setup" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -82,6 +62,13 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -102,14 +89,19 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/zigzag/Desktop/Python",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.38505748",
-    "spring.configuration.checksum": "809b23a7380c78f4875d710f7624a924"
+    "spring.configuration.checksum": "8bcf43100dfb2ffb7bf7c33a095a949d"
   }
 }]]></component>
   <component name="ReactorSettings">
@@ -119,10 +111,12 @@
     <option name="myCommands">
       <command value="gradle application:build" />
       <command value="gradle application:bootRun" />
+      <command value="gradle build" />
+      <command value="gradle bootRun" />
       <command value="gradle application:bootRun --info" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.crm-clean-architecture [application:bootRun]">
+  <component name="RunManager" selected="Gradle.crm-clean-architecture:application [bootRun]">
     <configuration name="crm-clean-architecture [application:bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -165,18 +159,18 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="crm-clean-architecture [init]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="crm-clean-architecture [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="init" />
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -186,10 +180,10 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="crm-clean-architecture [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="crm-clean-architecture:application [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/application" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -197,7 +191,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="jar" />
+            <option value="bootRun" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -238,11 +232,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.crm-clean-architecture:application [bootRun]" />
         <item itemvalue="Gradle.crm-clean-architecture [bootRun]" />
+        <item itemvalue="Gradle.crm-clean-architecture [build]" />
         <item itemvalue="Python.killport" />
         <item itemvalue="Gradle.crm-clean-architecture [application:bootRun]" />
-        <item itemvalue="Gradle.crm-clean-architecture [init]" />
-        <item itemvalue="Gradle.crm-clean-architecture [jar]" />
       </list>
     </recent_temporary>
   </component>
@@ -254,7 +248,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662998223093</updated>
-      <workItem from="1662998225610" duration="2156000" />
+      <workItem from="1662998225610" duration="3309000" />
+      <workItem from="1663001740372" duration="2761000" />
     </task>
     <servers />
   </component>

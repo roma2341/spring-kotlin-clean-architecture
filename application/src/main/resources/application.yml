@@ -1,4 +1,5 @@
-mongo:
-  db:
-    connection: mongodb://joe:password@10.128.3.4.23:27017/ecosystem
-    name: ecosystem
+crm:
+  mongo:
+    db:
+      connection: mongodb://joe:password@localhost:27017/crm
+      name: crm
