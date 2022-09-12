@@ -1,12 +1,11 @@
 
 rootProject.name = "crm-clean-architecture"
 include("application")
-include("domain-api")
-include("domain-implementation")
-include("usecase-api")
-include("usecase-implementation")
+include("domain")
+include("usecases")
 include("framework")
 include("framework:controllers")
+include("framework:repositories")
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
@@ -18,7 +17,3 @@ pluginManagement {
         kotlin("plugin.spring") version "1.7.10"
     }
 }
-include("repository-api")
-include("repository-implementation")
-include("framework:dao")
-findProject(":framework:dao")?.name = "dao"

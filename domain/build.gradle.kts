@@ -1,8 +1,6 @@
 plugins {
     id("java")
-    id("org.springframework.boot")
     kotlin("jvm")
-    kotlin("plugin.spring")
 }
 
 group = "com.zigzag.crm"
@@ -15,9 +13,8 @@ repositories {
 dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-api")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+    implementation("org.springframework.boot:spring-boot-starter-webflux")
     implementation(kotlin("stdlib"))
-    api(projects.framework.controllers)
-    api(projects.framework.repositories)
 }
 
 tasks.getByName<Test>("test") {

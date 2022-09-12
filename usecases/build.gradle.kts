@@ -1,8 +1,8 @@
 plugins {
     id("java")
-    id("org.springframework.boot")
     kotlin("jvm")
     kotlin("plugin.spring")
+    kotlin("kapt")
 }
 
 group = "com.zigzag.crm"
@@ -10,18 +10,17 @@ version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
-    maven { url = uri("https://repo.spring.io/milestone") }
-    maven { url = uri("https://repo.spring.io/snapshot") }
 }
 
 dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-api:${rootProject.extra.get("junit_version")}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${rootProject.extra.get("junit_version")}")
-    implementation("org.springframework.boot:spring-boot-starter")
+    implementation(kotlin("stdlib", version = rootProject.extra.get("jetbrains_kotlin_version") as String))
+    implementation("org.springframework:spring-context")
+    implementation("org.mapstruct:mapstruct:1.5.2.Final")
+    kapt("org.mapstruct:mapstruct-processor:1.5.2.Final")
     implementation("org.springframework.boot:spring-boot-starter-webflux")
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
-    implementation(projects.domain)
-    implementation(projects.usecases)
+    api(projects.domain)
 }
 
 tasks.getByName<Test>("test") {
