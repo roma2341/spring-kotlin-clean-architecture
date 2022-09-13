@@ -1,5 +1,5 @@
 crm:
   mongo:
-    db:
-      connection: mongodb://joe:password@localhost:27017/crm
-      name: crm
+    enabled: true
+    connection: mongodb://localhost:27017/crm
+    name: crm

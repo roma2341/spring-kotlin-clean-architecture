@@ -24,7 +24,7 @@ class CrmUserController(
         return usecaseCreateUser.execute(userModel);
     }
     @GetMapping("/{userId}")
-    fun getUser(@PathVariable userId: Long): Mono<CrmUserDto.Response.Public> {
+    fun getUser(@PathVariable userId: String): Mono<CrmUserDto.Response.Public> {
         return usecaseFindUserById.execute(userId);
     }
 }

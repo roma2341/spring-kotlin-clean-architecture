@@ -1,4 +1,4 @@
-package com.zigzag.crm.repository.config
+package com.zigzag.crm.config
 
 import com.mongodb.reactivestreams.client.MongoClient
 import com.mongodb.reactivestreams.client.MongoClients
@@ -9,12 +9,12 @@ import org.springframework.data.mongodb.config.AbstractReactiveMongoConfiguratio
 import org.springframework.data.mongodb.repository.config.EnableReactiveMongoRepositories
 
 @Configuration
-@EnableReactiveMongoRepositories
+@EnableReactiveMongoRepositories("com.zigzag.crm")
 class CrmDaoConfig: AbstractReactiveMongoConfiguration() {
-    @Value("\${crm.mongo.db.connection}")
+    @Value("\${crm.mongo.connection}")
     private val mongoConnection: String? = null
 
-    @Value("\${crm.mongo.db.name}")
+    @Value("\${crm.mongo.name}")
     private val mongoDatabaseName: String? = null
 
     @Bean

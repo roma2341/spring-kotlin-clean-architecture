@@ -6,5 +6,5 @@ import reactor.core.publisher.Mono
 
 interface ICrmUserRepository {
     fun createUser(user: CrmUser): Mono<CrmUser>;
-    fun findById(id: Long): Mono<CrmUser>;
+    fun findById(id: String): Mono<CrmUser>;
 }

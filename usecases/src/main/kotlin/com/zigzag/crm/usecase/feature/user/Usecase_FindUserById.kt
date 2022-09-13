@@ -13,7 +13,7 @@ class Usecase_FindUserById(
     private val crmUserMapper: CrmUserMapper
 ): IUsecase_FindUserById {
 
-    override fun execute(userId: Long): Mono<CrmUserDto.Response.Public> {
+    override fun execute(userId: String): Mono<CrmUserDto.Response.Public> {
         val user = userRepository.findById(userId);
         return user.map{usr -> crmUserMapper.convertDomainModeltoResponsePublicDto(usr)};
     }

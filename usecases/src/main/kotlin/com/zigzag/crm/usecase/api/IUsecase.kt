@@ -4,5 +4,5 @@ import org.springframework.stereotype.Component
 
 @Component
 interface IUsecase<Result, Argument> {
-    fun execute(argument: Argument): Result
+    fun execute(arg: Argument): Result
 }
