@@ -2,7 +2,7 @@ package com.zigzag.crm.usecase.api.user
 
 import com.zigzag.crm.usecase.api.IUsecase
 import com.zigzag.crm.usecase.api.user.dto.CrmUserDto
-import reactor.core.publisher.Mono
+import reactor.core.publisher.Flux
 
-interface IUsecase_FindUserById: IUsecase<Mono<CrmUserDto.Response.Public>, String> {
+interface Usecase_FindAllUsers: IUsecase<Flux<CrmUserDto.Response.Public>, String> {
 }

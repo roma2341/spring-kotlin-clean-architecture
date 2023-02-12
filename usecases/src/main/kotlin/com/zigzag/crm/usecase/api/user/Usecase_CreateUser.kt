@@ -6,5 +6,5 @@ import org.springframework.stereotype.Component
 import reactor.core.publisher.Mono
 
 @Component
-interface IUsecase_CreateUser: IUsecase<Mono<CrmUserDto.Response.Public>, CrmUserDto.Request.Create> {
+interface Usecase_CreateUser: IUsecase<Mono<CrmUserDto.Response.Public>, CrmUserDto.Request.Create> {
 }
