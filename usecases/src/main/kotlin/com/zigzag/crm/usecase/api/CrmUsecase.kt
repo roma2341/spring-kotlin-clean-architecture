@@ -3,6 +3,6 @@ package com.zigzag.crm.usecase.api
 import org.springframework.stereotype.Component
 
 @Component
-interface IUsecaseNoArg<Result> {
-    fun execute(): Result
+interface CrmUsecase<Result, Argument> {
+    fun execute(arg: Argument): Result
 }
