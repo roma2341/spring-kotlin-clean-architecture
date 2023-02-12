@@ -1,6 +1,7 @@
 package com.zigzag.crm.framework.controllers.features.user
 
 import com.zigzag.crm.usecase.api.user.Usecase_CreateUser
+import com.zigzag.crm.usecase.api.user.Usecase_FindAllUsers
 import com.zigzag.crm.usecase.api.user.Usecase_FindUserById
 import com.zigzag.crm.usecase.api.user.dto.CrmUserDto
 import org.springframework.web.bind.annotation.*
@@ -12,7 +13,8 @@ import javax.annotation.PostConstruct
 @RequestMapping("/users")
 class CrmUserController(
     private val usecaseCreateUser: Usecase_CreateUser,
-    private val usecaseFindUserById: Usecase_FindUserById
+    private val usecaseFindUserById: Usecase_FindUserById,
+    private val usecaseFindAllUsers: Usecase_FindAllUsers
 ){
 
     @PostConstruct
@@ -30,6 +32,6 @@ class CrmUserController(
     }
     @GetMapping()
     fun getUsers(): Flux<CrmUserDto.Response.Public> {
-        return u
+        return usecaseFindAllUsers.execute();
     }
 }

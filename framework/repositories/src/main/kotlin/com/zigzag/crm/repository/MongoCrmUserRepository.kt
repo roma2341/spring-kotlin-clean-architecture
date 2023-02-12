@@ -10,6 +10,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository
 import org.springframework.stereotype.Component
 import org.springframework.stereotype.Repository
+import reactor.core.publisher.Flux
 import reactor.core.publisher.Mono
 
 @Component
@@ -22,7 +23,11 @@ class MongoCrmUserRepository(private val crmUserRepositoryHelper: CrmUserReposit
     }
 
     override fun findById(id: String): Mono<CrmUser> {
-        return crmUserRepositoryHelper.findById(id).map { u -> crmUserDocumentMapper.convertDocumentToUser(u) };
+        return crmUserRepositoryHelper.findById(id).map { u -> crmUserDocumentMapper.convertDocumentToUser(u) }
+    }
+
+    override fun findAll(): Flux<CrmUser> {
+        return crmUserRepositoryHelper.findAll().map {u -> crmUserDocumentMapper.convertDocumentToUser(u)}
     };
 
 }

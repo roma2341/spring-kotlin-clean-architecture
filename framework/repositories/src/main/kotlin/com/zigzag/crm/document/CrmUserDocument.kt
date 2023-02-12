@@ -7,6 +7,6 @@ import org.springframework.data.mongodb.core.mapping.Document
 data class CrmUserDocument(
     @Id
     val id:String?,
-    val firstName:String,
-    val lastName:String,
-    val email:String)
+    val firstName:String?,
+    val lastName:String?,
+    val email:String?)
