@@ -4,6 +4,7 @@ import com.zigzag.crm.usecase.api.user.IUsecase_CreateUser
 import com.zigzag.crm.usecase.api.user.IUsecase_FindUserById
 import com.zigzag.crm.usecase.api.user.dto.CrmUserDto
 import org.springframework.web.bind.annotation.*
+import reactor.core.publisher.Flux
 import reactor.core.publisher.Mono
 import javax.annotation.PostConstruct
 
@@ -26,5 +27,9 @@ class CrmUserController(
     @GetMapping("/{userId}")
     fun getUser(@PathVariable userId: String): Mono<CrmUserDto.Response.Public> {
         return usecaseFindUserById.execute(userId);
+    }
+    @GetMapping()
+    fun getUsers(): Flux<CrmUserDto.Response.Public> {
+        return u
     }
 }
