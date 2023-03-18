@@ -1,4 +1,4 @@
-package com.zigzag.crm.module.graphql.controller
+package com.zigzag.crm.framework.graphql.controller
 
 import com.expediagroup.graphql.server.operations.Query
 import org.springframework.stereotype.Controller

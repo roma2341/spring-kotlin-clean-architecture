@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96c114a2-ce67-4722-8740-39d32f515c99" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/module/graphql/controller/DemoQuery.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/module/graphql/mutation/CrmUserMutation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/repositories/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/framework/repositories/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/module/mongo/filter/service/GenericFilterCriteriaBuilder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/module/mongo/filter/service/GenericFilterCriteriaBuilder.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/graphql/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/framework/graphql/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/graphql/src/main/com/zigzag/crm/framework/graphql/controller/DemoQuery.kt" beforeDir="false" afterPath="$PROJECT_DIR$/framework/graphql/src/main/kotlin/com/zigzag/crm/framework/graphql/controller/DemoQuery.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/graphql/src/main/com/zigzag/crm/framework/graphql/mutation/CrmUserMutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/framework/graphql/src/main/kotlin/com/zigzag/crm/framework/graphql/mutation/CrmUserMutation.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +49,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Interface" />
-        <option value="Kotlin Class" />
         <option value="Class" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -91,7 +90,8 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.38505748",
-    "spring.configuration.checksum": "809b23a7380c78f4875d710f7624a924",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "e263210b183e6a66b62ffca6885ea7db",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -99,6 +99,9 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zigzag\Documents\Projects\crm-clean-architecture\framework\graphql\src\main\kotlin" />
+    </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="com.zigzag.crm.module.mongo.config" />
       <recent name="com.zigzag.crm.module.mongo.repository.user" />
@@ -266,7 +269,8 @@
       <workItem from="1670750546080" duration="57000" />
       <workItem from="1676209898506" duration="10124000" />
       <workItem from="1676310862314" duration="45000" />
-      <workItem from="1679150779643" duration="6644000" />
+      <workItem from="1679150779643" duration="8581000" />
+      <workItem from="1679166971764" duration="890000" />
     </task>
     <servers />
   </component>
