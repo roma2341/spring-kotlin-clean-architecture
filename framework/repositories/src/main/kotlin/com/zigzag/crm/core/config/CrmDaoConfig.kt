@@ -1,4 +1,4 @@
-package com.zigzag.crm.config
+package com.zigzag.crm.core.config
 
 import com.mongodb.reactivestreams.client.MongoClient
 import com.mongodb.reactivestreams.client.MongoClients

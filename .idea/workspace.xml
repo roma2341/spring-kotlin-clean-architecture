@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96c114a2-ce67-4722-8740-39d32f515c99" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/service/GenericFilterCriteriaBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/module/filter/enums/FilterOperator.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/module/filter/model/FilterCondition.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/module/filter/service/GenericFilterCriteriaBuilder.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/document/CrmUserDocument.kt" beforeDir="false" afterPath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/repository/user/CrmUserDocument.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/helper/CrmUserRepositoryHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/repository/user/CrmUserRepositoryHelper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/mapper/CrmUserDocumentMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/repository/user/CrmUserDocumentMapper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/repository/MongoCrmUserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/repository/user/MongoCrmUserRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/config/CrmDaoConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/core/config/CrmDaoConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/service/GenericFilterCriteriaBuilder.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +49,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Interface" />
-        <option value="Kotlin Class" />
         <option value="Class" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -98,6 +98,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.zigzag.crm.core.config" />
       <recent name="com.zigzag.crm.repository.user" />
       <recent name="com.zigzag.crm.repository" />
       <recent name="com.zigzag.crm.repository.memory" />
@@ -262,6 +263,7 @@
       <workItem from="1670750546080" duration="57000" />
       <workItem from="1676209898506" duration="10124000" />
       <workItem from="1676310862314" duration="45000" />
+      <workItem from="1679150779643" duration="2631000" />
     </task>
     <servers />
   </component>
