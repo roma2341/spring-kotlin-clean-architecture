@@ -3,3 +3,5 @@ crm:
     enabled: true
     connection: mongodb://localhost:27017/crm
     name: crm
+graphql:
+  packages: "com.zigzag.crm.module.graphql"

@@ -63,7 +63,7 @@ class GenericFilterCriteriaBuilder {
      * @return {[Criteria]}
      */
     private fun buildCriteria(condition: FilterCondition): Criteria {
-        val function: Function<FilterCondition, Criteria> = FILTER_CRITERIA[condition.operator.name()]
+        val function: Function<FilterCondition, Criteria> = FILTER_CRITERIA[condition.operator]
             ?: throw IllegalArgumentException("Invalid function param type: ")
         return function.apply(condition)
     }

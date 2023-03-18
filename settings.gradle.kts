@@ -17,3 +17,5 @@ pluginManagement {
         kotlin("plugin.spring") version "1.7.10"
     }
 }
+include("framework:graphql")
+findProject(":framework:graphql")?.name = "graphql"

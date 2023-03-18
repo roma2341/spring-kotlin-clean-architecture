@@ -17,6 +17,7 @@ dependencies {
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
     implementation(kotlin("stdlib"))
     api(projects.framework.controllers)
+    api(projects.framework.graphql)
     api(projects.framework.repositories)
 }
 
