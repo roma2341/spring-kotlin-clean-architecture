@@ -5,21 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96c114a2-ce67-4722-8740-39d32f515c99" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/document/CrmUserDocument.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/helper/CrmUserRepositoryHelper.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/mapper/CrmUserDocumentMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/service/GenericFilterCriteriaBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/kotlin/com/zigzag/crm/framework/domain/api/features/user/CrmUser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/kotlin/com/zigzag/crm/framework/domain/api/features/user/CrmUser.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/kotlin/com/zigzag/crm/framework/domain/api/repository/ICrmUserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/kotlin/com/zigzag/crm/framework/domain/api/repository/ICrmUserRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/controllers/src/main/kotlin/com/zigzag/crm/framework/controllers/features/user/CrmUserController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/framework/controllers/src/main/kotlin/com/zigzag/crm/framework/controllers/features/user/CrmUserController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/repositories/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/framework/repositories/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/repository/InMemoryCrmUserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/repository/MongoCrmUserRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/repository/config/CrmDaoConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/config/CrmDaoConfig.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usecases/src/main/kotlin/com/zigzag/crm/usecase/api/IUsecase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/usecases/src/main/kotlin/com/zigzag/crm/usecase/api/IUsecase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usecases/src/main/kotlin/com/zigzag/crm/usecase/api/user/IUsecase_FindUserById.kt" beforeDir="false" afterPath="$PROJECT_DIR$/usecases/src/main/kotlin/com/zigzag/crm/usecase/api/user/IUsecase_FindUserById.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usecases/src/main/kotlin/com/zigzag/crm/usecase/api/user/dto/CrmUserDto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/usecases/src/main/kotlin/com/zigzag/crm/usecase/api/user/dto/CrmUserDto.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usecases/src/main/kotlin/com/zigzag/crm/usecase/feature/user/Usecase_FindUserById.kt" beforeDir="false" afterPath="$PROJECT_DIR$/usecases/src/main/kotlin/com/zigzag/crm/usecase/feature/user/Usecase_FindUserById.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/document/CrmUserDocument.kt" beforeDir="false" afterPath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/repository/user/CrmUserDocument.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/helper/CrmUserRepositoryHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/repository/user/CrmUserRepositoryHelper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/mapper/CrmUserDocumentMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/repository/user/CrmUserDocumentMapper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/repository/MongoCrmUserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/framework/repositories/src/main/kotlin/com/zigzag/crm/repository/user/MongoCrmUserRepository.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,24 +38,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="crm-clean-architecture" type="f1a62948:ProjectNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="crm-clean-architecture" type="f1a62948:ProjectNode" />
-                <item name="application" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="crm-clean-architecture" type="f1a62948:ProjectNode" />
-                <item name="application" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="crm-clean-architecture" type="f1a62948:ProjectNode" />
-                <item name="application" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -75,8 +48,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
+        <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -107,11 +81,16 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/zigzag/Desktop/Python&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.38505748&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;8bcf43100dfb2ffb7bf7c33a095a949d&quot;
+    &quot;spring.configuration.checksum&quot;: &quot;809b23a7380c78f4875d710f7624a924&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="ReactorSettings">
@@ -119,6 +98,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.zigzag.crm.repository.user" />
       <recent name="com.zigzag.crm.repository" />
       <recent name="com.zigzag.crm.repository.memory" />
     </key>
@@ -267,7 +247,21 @@
       <updated>1662998223093</updated>
       <workItem from="1662998225610" duration="3309000" />
       <workItem from="1663001740372" duration="6707000" />
-      <workItem from="1663068612932" duration="5593000" />
+      <workItem from="1663068612932" duration="6957000" />
+      <workItem from="1663324457901" duration="82000" />
+      <workItem from="1664126932490" duration="612000" />
+      <workItem from="1664137959205" duration="1194000" />
+      <workItem from="1664177317655" duration="80000" />
+      <workItem from="1665233194486" duration="5649000" />
+      <workItem from="1665255490633" duration="685000" />
+      <workItem from="1665319768471" duration="1587000" />
+      <workItem from="1668077159013" duration="688000" />
+      <workItem from="1670123019842" duration="1165000" />
+      <workItem from="1670156340987" duration="1116000" />
+      <workItem from="1670704946366" duration="36000" />
+      <workItem from="1670750546080" duration="57000" />
+      <workItem from="1676209898506" duration="10124000" />
+      <workItem from="1676310862314" duration="45000" />
     </task>
     <servers />
   </component>
