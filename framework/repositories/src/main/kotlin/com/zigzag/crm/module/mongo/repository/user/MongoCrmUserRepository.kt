@@ -1,4 +1,4 @@
-package com.zigzag.crm.repository.user
+package com.zigzag.crm.module.mongo.repository.user
 
 import com.zigzag.crm.framework.domain.api.features.user.CrmUser
 import com.zigzag.crm.framework.domain.api.repository.ICrmUserRepository

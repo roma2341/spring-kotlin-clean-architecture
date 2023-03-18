@@ -1,6 +1,5 @@
-package com.zigzag.crm.repository.user
+package com.zigzag.crm.module.mongo.repository.user
 
-import com.zigzag.crm.repository.user.CrmUserDocument
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository
 import org.springframework.stereotype.Repository
 

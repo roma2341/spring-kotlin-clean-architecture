@@ -1,4 +1,4 @@
-package com.zigzag.crm.module.filter.enums
+package com.zigzag.crm.module.mongo.filter.enums
 
 enum class FilterOperator {
     EQUAL,

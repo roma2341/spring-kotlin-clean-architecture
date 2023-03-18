@@ -1,7 +1,7 @@
-package com.zigzag.crm.module.filter.service
+package com.zigzag.crm.module.mongo.filter.service
 
-import com.zigzag.crm.module.filter.enums.FilterOperator
-import com.zigzag.crm.module.filter.model.FilterCondition
+import com.zigzag.crm.module.mongo.filter.enums.FilterOperator
+import com.zigzag.crm.module.mongo.filter.model.FilterCondition
 import org.springframework.data.mongodb.core.query.Criteria
 import org.springframework.data.mongodb.core.query.Query
 import java.util.*

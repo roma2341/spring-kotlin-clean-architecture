@@ -1,6 +1,5 @@
-package com.zigzag.crm.repository.user
+package com.zigzag.crm.module.mongo.repository.user
 
-import com.zigzag.crm.repository.user.CrmUserDocument
 import com.zigzag.crm.framework.domain.api.features.user.CrmUser
 import org.mapstruct.Mapper
 
