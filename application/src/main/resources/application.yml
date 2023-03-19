@@ -4,4 +4,5 @@ crm:
     connection: mongodb://localhost:27017/crm
     name: crm
 graphql:
-  packages: "com.zigzag.crm.framework.graphql"
+  annotations:
+    base-package: com.zigzag.crm.framework.graphql # required

@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96c114a2-ce67-4722-8740-39d32f515c99" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework/graphql/src/main/java/com/zigzag/crm/framework/graphql/feature/user/dto/DtoGqlCrmUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework/graphql/src/main/java/com/zigzag/crm/framework/graphql/feature/user/mapper/GqlMapperCrmUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework/graphql/src/main/java/com/zigzag/crm/framework/graphql/feature/user/mutation/CrmUserMutation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework/graphql/src/main/java/com/zigzag/crm/framework/graphql/feature/user/query/DemoQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/graphql/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/framework/graphql/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/graphql/src/main/kotlin/com/zigzag/crm/framework/graphql/controller/DemoQuery.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/graphql/src/main/kotlin/com/zigzag/crm/framework/graphql/mutation/CrmUserMutation.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/repositories/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/framework/repositories/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usecases/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/usecases/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/graphql/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/framework/graphql/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/graphql/lombok.config" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,7 +274,7 @@
       <workItem from="1676310862314" duration="45000" />
       <workItem from="1679150779643" duration="8581000" />
       <workItem from="1679166971764" duration="890000" />
-      <workItem from="1679218344205" duration="19614000" />
+      <workItem from="1679218344205" duration="21491000" />
     </task>
     <servers />
   </component>
