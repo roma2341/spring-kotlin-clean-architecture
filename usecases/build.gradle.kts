@@ -17,8 +17,8 @@ dependencies {
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${rootProject.extra.get("junit_version")}")
     implementation(kotlin("stdlib", version = rootProject.extra.get("jetbrains_kotlin_version") as String))
     implementation("org.springframework:spring-context")
-    implementation("org.mapstruct:mapstruct:1.5.2.Final")
-    kapt("org.mapstruct:mapstruct-processor:1.5.2.Final")
+    implementation("org.mapstruct:mapstruct:1.5.3.Final")
+    kapt("org.mapstruct:mapstruct-processor:1.5.3.Final")
     implementation("org.springframework.boot:spring-boot-starter-webflux")
     api(projects.domain)
 }

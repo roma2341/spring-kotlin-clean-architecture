@@ -5,12 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96c114a2-ce67-4722-8740-39d32f515c99" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework/graphql/src/main/java/com/zigzag/crm/framework/graphql/feature/user/dto/DtoGqlCrmUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework/graphql/src/main/java/com/zigzag/crm/framework/graphql/feature/user/mapper/GqlMapperCrmUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework/graphql/src/main/java/com/zigzag/crm/framework/graphql/feature/user/mutation/CrmUserMutation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework/graphql/src/main/java/com/zigzag/crm/framework/graphql/feature/user/query/DemoQuery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/graphql/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/framework/graphql/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/graphql/src/main/com/zigzag/crm/framework/graphql/controller/DemoQuery.kt" beforeDir="false" afterPath="$PROJECT_DIR$/framework/graphql/src/main/kotlin/com/zigzag/crm/framework/graphql/controller/DemoQuery.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/graphql/src/main/com/zigzag/crm/framework/graphql/mutation/CrmUserMutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/framework/graphql/src/main/kotlin/com/zigzag/crm/framework/graphql/mutation/CrmUserMutation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/graphql/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/framework/graphql/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/graphql/src/main/kotlin/com/zigzag/crm/framework/graphql/controller/DemoQuery.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/graphql/src/main/kotlin/com/zigzag/crm/framework/graphql/mutation/CrmUserMutation.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/repositories/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/framework/repositories/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecases/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/usecases/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +55,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Interface" />
-        <option value="Class" />
         <option value="Kotlin Class" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -79,6 +86,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "corretto-17",
     "last_opened_file_path": "C:/Users/zigzag/Desktop/Python",
@@ -103,11 +111,14 @@
       <recent name="C:\Users\zigzag\Documents\Projects\crm-clean-architecture\framework\graphql\src\main\kotlin" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.zigzag.crm.framework.graphql.feature.user.query" />
+      <recent name="com.zigzag.crm.framework.graphql.feature.user.mapper" />
       <recent name="com.zigzag.crm.module.mongo.config" />
       <recent name="com.zigzag.crm.module.mongo.repository.user" />
       <recent name="com.zigzag.crm.core.config" />
-      <recent name="com.zigzag.crm.repository.user" />
-      <recent name="com.zigzag.crm.repository" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.zigzag.crm.framework.graphql.core.mapstruct.mapper" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -116,8 +127,8 @@
       <command value="gradle build" />
       <command value="gradle bootRun" />
       <command value="gradle application:bootRun --info" />
-      <command value="gradle application:build" />
       <command value="gradle application:build --info" />
+      <command value="gradle application:build" />
     </option>
   </component>
   <component name="RunManager" selected="Gradle.crm-clean-architecture:application [bootRun]">
@@ -271,6 +282,7 @@
       <workItem from="1676310862314" duration="45000" />
       <workItem from="1679150779643" duration="8581000" />
       <workItem from="1679166971764" duration="890000" />
+      <workItem from="1679218344205" duration="19614000" />
     </task>
     <servers />
   </component>
