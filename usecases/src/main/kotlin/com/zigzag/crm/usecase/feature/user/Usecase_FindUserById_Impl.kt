@@ -15,7 +15,7 @@ class Usecase_FindUserById_Impl(
 
     override fun execute(userId: String): Mono<CrmUserDto.Response.Public> {
         val user = userRepository.findById(userId);
-        return user.map{usr -> crmUserMapper.convertDomainModeltoResponsePublicDto(usr)};
+        return user.map{usr -> crmUserMapper.convertEntityToDto(usr)};
     }
 
 }

@@ -12,6 +12,6 @@ class Usecase_FindAllUsers_Impl(private val userRepository: ICrmUserRepository,
                                 private val crmUserMapper: CrmUserMapper
 ) : Usecase_FindAllUsers {
     override fun execute(): Flux<CrmUserDto.Response.Public> {
-       return userRepository.findAll().map{usr -> crmUserMapper.convertDomainModeltoResponsePublicDto(usr)};
+       return userRepository.findAll().map{usr -> crmUserMapper.convertEntityToDto(usr)};
     }
 }

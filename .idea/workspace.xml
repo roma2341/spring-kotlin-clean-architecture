@@ -5,10 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96c114a2-ce67-4722-8740-39d32f515c99" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/framework/graphql/src/main/java/com/zigzag/crm/framework/graphql/feature/user/mutation/CrmUserQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework/graphql/src/main/resources/graphql/root.graphqls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework/graphql/src/main/resources/graphql/user.graphqls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/framework/graphql/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/framework/graphql/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/graphql/lombok.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/graphql/src/main/java/com/zigzag/crm/framework/graphql/feature/user/dto/DtoGqlCrmUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/graphql/src/main/java/com/zigzag/crm/framework/graphql/feature/user/mapper/GqlMapperCrmUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/graphql/src/main/java/com/zigzag/crm/framework/graphql/feature/user/mutation/CrmUserMutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework/graphql/src/main/java/com/zigzag/crm/framework/graphql/feature/user/mutation/CrmUserMutation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/graphql/src/main/java/com/zigzag/crm/framework/graphql/feature/user/query/DemoQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework/graphql/src/main/java/com/zigzag/crm/framework/graphql/feature/user/query/DemoQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecases/src/main/kotlin/com/zigzag/crm/usecase/feature/user/Usecase_CreateUser_Impl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/usecases/src/main/kotlin/com/zigzag/crm/usecase/feature/user/Usecase_CreateUser_Impl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecases/src/main/kotlin/com/zigzag/crm/usecase/feature/user/Usecase_FindAllUsers_Impl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/usecases/src/main/kotlin/com/zigzag/crm/usecase/feature/user/Usecase_FindAllUsers_Impl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecases/src/main/kotlin/com/zigzag/crm/usecase/feature/user/Usecase_FindUserById_Impl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/usecases/src/main/kotlin/com/zigzag/crm/usecase/feature/user/Usecase_FindUserById_Impl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecases/src/main/kotlin/com/zigzag/crm/usecase/feature/user/mapper/CrmUserMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/usecases/src/main/kotlin/com/zigzag/crm/usecase/feature/user/mapper/CrmUserMapper.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +100,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.38505748",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "reference.idesettings.debugger.typerenderers",
     "spring.configuration.checksum": "e263210b183e6a66b62ffca6885ea7db",
     "vue.rearranger.settings.migration": "true"
   }
@@ -274,7 +284,10 @@
       <workItem from="1676310862314" duration="45000" />
       <workItem from="1679150779643" duration="8581000" />
       <workItem from="1679166971764" duration="890000" />
-      <workItem from="1679218344205" duration="21491000" />
+      <workItem from="1679218344205" duration="22187000" />
+      <workItem from="1679293581651" duration="46000" />
+      <workItem from="1679743167479" duration="2331000" />
+      <workItem from="1679745594608" duration="9903000" />
     </task>
     <servers />
   </component>
@@ -291,5 +304,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="reactor.core.publisher.FluxMap" memberName="elementData" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="GradleRunConfiguration">
+        <watch expression="userRepository.findAll()" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

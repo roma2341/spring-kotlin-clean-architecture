@@ -6,6 +6,6 @@ import org.mapstruct.Mapper
 
 @Mapper(componentModel = "spring")
 interface CrmUserMapper {
-    fun convertRequestCreateToDomainModel(userDto: CrmUserDto.Request.Create): CrmUser
-    fun convertDomainModeltoResponsePublicDto(user: CrmUser): CrmUserDto.Response.Public
+    fun convertDtoToEntity(userDto: CrmUserDto.Request.Create): CrmUser
+    fun convertEntityToDto(user: CrmUser): CrmUserDto.Response.Public
 }

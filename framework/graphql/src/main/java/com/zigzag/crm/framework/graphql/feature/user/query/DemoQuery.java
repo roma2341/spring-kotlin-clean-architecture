@@ -5,7 +5,7 @@ import org.springframework.stereotype.Controller;
 
 @Controller
 public class DemoQuery {
-    @QueryMapping
+    @QueryMapping(name = "demo")
     String demo()  {
         return "Our query works";
     }
