@@ -1,6 +1,6 @@
 package com.zigzag.crm.usecase.feature.user
 
-import com.zigzag.crm.framework.domain.api.repository.ICrmUserRepository
+import com.zigzag.crm.framework.domain.api.features.user.ICrmUserRepository
 import com.zigzag.crm.usecase.api.user.Usecase_FindUserById
 import com.zigzag.crm.usecase.api.user.dto.CrmUserDto
 import com.zigzag.crm.usecase.feature.user.mapper.CrmUserMapper

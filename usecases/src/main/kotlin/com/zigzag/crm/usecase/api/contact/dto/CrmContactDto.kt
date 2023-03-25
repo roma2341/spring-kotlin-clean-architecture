@@ -1,6 +1,7 @@
 package com.zigzag.crm.usecase.api.contact.dto
 
 import com.zigzag.crm.usecase.api.product.dto.CrmProductDto
+import com.zigzag.crm.usecase.api.user.dto.CrmUserDto
 
 enum class CrmContactDto {;
     private interface Id { val id: String? }
@@ -16,4 +17,15 @@ enum class CrmContactDto {;
             override val email: String?,
             override val phone: String?): FirstName, LastName, Email, Phone;
     }
+
+    enum class Response {;
+        data class Public(
+            override val id: String?,
+            override val firstName: String?,
+            override val lastName: String?,
+            override val email: String?,
+            override val phone: String?
+        ):  Id,FirstName, LastName, Email, Phone
+    }
+
 }

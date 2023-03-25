@@ -1,4 +1,4 @@
-package com.zigzag.crm.framework.domain.api.repository
+package com.zigzag.crm.framework.domain.api.features.user
 
 import com.zigzag.crm.framework.domain.api.features.user.CrmUser
 import reactor.core.publisher.Flux
