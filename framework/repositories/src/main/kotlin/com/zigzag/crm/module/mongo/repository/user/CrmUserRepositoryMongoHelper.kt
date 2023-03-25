@@ -4,6 +4,6 @@ import org.springframework.data.mongodb.repository.ReactiveMongoRepository
 import org.springframework.stereotype.Repository
 
 @Repository
-interface CrmUserRepositoryHelper: ReactiveMongoRepository<CrmUserDocument, String> {
+interface CrmUserRepositoryMongoHelper: ReactiveMongoRepository<CrmUserDocument, String> {
 
 }

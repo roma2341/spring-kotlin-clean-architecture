@@ -7,21 +7,21 @@ import reactor.core.publisher.Flux
 import reactor.core.publisher.Mono
 
 @Component
-class MongoCrmUserRepository(private val crmUserRepositoryHelper: CrmUserRepositoryHelper,
-                             private val crmUserDocumentMapper: CrmUserDocumentMapper
+class CrmUserRepository(private val crmUserRepositoryMongoHelper: CrmUserRepositoryMongoHelper,
+                        private val crmUserDocumentMapper: CrmUserDocumentMapper
 ) : ICrmUserRepository {
 
     override fun createUser(user: CrmUser): Mono<CrmUser> {
         val document = crmUserDocumentMapper.convertUserToDocument(user);
-        return crmUserRepositoryHelper.save(document).map { u -> crmUserDocumentMapper.convertDocumentToUser(u); }
+        return crmUserRepositoryMongoHelper.save(document).map { u -> crmUserDocumentMapper.convertDocumentToUser(u); }
     }
 
     override fun findById(id: String): Mono<CrmUser> {
-        return crmUserRepositoryHelper.findById(id).map { u -> crmUserDocumentMapper.convertDocumentToUser(u) }
+        return crmUserRepositoryMongoHelper.findById(id).map { u -> crmUserDocumentMapper.convertDocumentToUser(u) }
     }
 
     override fun findAll(): Flux<CrmUser> {
-        return crmUserRepositoryHelper.findAll().map {u -> crmUserDocumentMapper.convertDocumentToUser(u)}
+        return crmUserRepositoryMongoHelper.findAll().map { u -> crmUserDocumentMapper.convertDocumentToUser(u)}
     };
 
 }
