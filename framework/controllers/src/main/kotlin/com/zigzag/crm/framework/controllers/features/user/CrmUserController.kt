@@ -1,9 +1,9 @@
 package com.zigzag.crm.framework.controllers.features.user
 
-import com.zigzag.crm.usecase.api.user.Usecase_CreateUser
-import com.zigzag.crm.usecase.api.user.Usecase_FindAllUsers
-import com.zigzag.crm.usecase.api.user.Usecase_FindUserById
-import com.zigzag.crm.usecase.api.user.dto.CrmUserDto
+import com.zigzag.crm.usecase.feature.user.api.Usecase_CreateUser
+import com.zigzag.crm.usecase.feature.user.api.Usecase_FindAllUsers
+import com.zigzag.crm.usecase.feature.user.api.Usecase_FindUserById
+import com.zigzag.crm.usecase.feature.user.dto.CrmUserDto
 import org.springframework.web.bind.annotation.*
 import reactor.core.publisher.Flux
 import reactor.core.publisher.Mono

@@ -1,4 +1,4 @@
-package com.zigzag.crm.usecase.api.user.dto
+package com.zigzag.crm.usecase.feature.user.dto
 
 enum class CrmUserDto{;
     private interface Id { val id: String? }

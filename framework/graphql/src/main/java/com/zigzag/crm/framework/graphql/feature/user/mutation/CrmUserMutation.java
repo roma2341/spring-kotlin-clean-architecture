@@ -1,7 +1,7 @@
 package com.zigzag.crm.framework.graphql.feature.user.mutation;
 
-import com.zigzag.crm.usecase.api.user.Usecase_CreateUser;
-import com.zigzag.crm.usecase.api.user.dto.CrmUserDto;
+import com.zigzag.crm.usecase.feature.user.api.Usecase_CreateUser;
+import com.zigzag.crm.usecase.feature.user.dto.CrmUserDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.MutationMapping;

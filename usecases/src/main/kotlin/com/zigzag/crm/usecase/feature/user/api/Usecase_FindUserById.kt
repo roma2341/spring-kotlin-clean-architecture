@@ -1,7 +1,7 @@
-package com.zigzag.crm.usecase.api.user
+package com.zigzag.crm.usecase.feature.user.api
 
-import com.zigzag.crm.usecase.api.CrmUsecase
-import com.zigzag.crm.usecase.api.user.dto.CrmUserDto
+import com.zigzag.crm.usecase.core.api.CrmUsecase
+import com.zigzag.crm.usecase.feature.user.dto.CrmUserDto
 import org.springframework.stereotype.Component
 import reactor.core.publisher.Mono
 

@@ -1,7 +1,7 @@
 package com.zigzag.crm.usecase.feature.contact
 
-import com.zigzag.crm.usecase.api.contact.dto.CrmContactDto
-import com.zigzag.crm.usecase.api.contact.dto.Usecase_CreateContact
+import com.zigzag.crm.usecase.feature.contact.dto.CrmContactDto
+import com.zigzag.crm.usecase.feature.contact.api.Usecase_CreateContact
 import org.springframework.stereotype.Component
 import reactor.core.publisher.Mono
 

@@ -1,4 +1,4 @@
-package com.zigzag.crm.usecase.api
+package com.zigzag.crm.usecase.core.api
 
 import org.springframework.stereotype.Component
 

@@ -1,7 +1,7 @@
 package com.zigzag.crm.usecase.feature.contact.mapper
 
 import com.zigzag.crm.framework.domain.api.features.contact.CrmContact
-import com.zigzag.crm.usecase.api.contact.dto.CrmContactDto
+import com.zigzag.crm.usecase.feature.contact.dto.CrmContactDto
 import org.mapstruct.Mapper
 
 @Mapper(componentModel = "spring")
