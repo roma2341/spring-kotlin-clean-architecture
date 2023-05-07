@@ -13,5 +13,5 @@ extend type Query{
     findAllUsers: [User]
 }
 extend type Mutation{
-    newUser(user: UserInput): User
+    createUser(user: UserInput): User
 }

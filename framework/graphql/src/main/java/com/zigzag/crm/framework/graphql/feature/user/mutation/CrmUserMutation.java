@@ -15,7 +15,7 @@ public class CrmUserMutation {
     private final Usecase_CreateUser usecaseCreateUser;
 
     @MutationMapping
-    public Mono<CrmUserDto.Response.Public> newUser( @Argument CrmUserDto.Request.Create user)  {
+    public Mono<CrmUserDto.Response.Public> createUser( @Argument CrmUserDto.Request.Create user)  {
         return usecaseCreateUser.execute(user);
     }
 }
