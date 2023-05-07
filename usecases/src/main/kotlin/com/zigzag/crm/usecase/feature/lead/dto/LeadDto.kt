@@ -11,16 +11,16 @@ enum class LeadDto{;
 
     enum class Request{;
         public data class Create(
-                              override val firstName: String?,
-                              override val lastName: String?,
-                              override val email: String?): FirstName, LastName, Email;
+                              override val firstName: String? = null,
+                              override val lastName: String? = null,
+                              override val email: String? = null): FirstName, LastName, Email;
     }
     enum class Response {;
         data class Public(
-            override val id: String?,
-            override val firstName: String?,
-            override val lastName: String?,
-            override val email: String?,
+            override val id: String? = null,
+            override val firstName: String? = null,
+            override val lastName: String? = null,
+            override val email: String? = null,
             override val leadFunnelStatus: LeadFunnelStatus
         ): Id, FirstName, LastName, Email, ILeadFunnelStatus
     }

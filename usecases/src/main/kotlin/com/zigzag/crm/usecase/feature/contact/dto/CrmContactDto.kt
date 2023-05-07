@@ -9,19 +9,19 @@ enum class CrmContactDto {;
 
     enum class Request {;
         public data class Create(
-            override val firstName: String?,
-            override val lastName: String?,
-            override val email: String?,
-            override val phone: String?): FirstName, LastName, Email, Phone;
+            override val firstName: String? = null,
+            override val lastName: String? = null,
+            override val email: String? = null,
+            override val phone: String? = null): FirstName, LastName, Email, Phone;
     }
 
     enum class Response {;
         data class Public(
-            override val id: String?,
-            override val firstName: String?,
-            override val lastName: String?,
-            override val email: String?,
-            override val phone: String?
+            override val id: String? = null,
+            override val firstName: String? = null,
+            override val lastName: String? = null,
+            override val email: String? = null,
+            override val phone: String? = null
         ):  Id, FirstName, LastName, Email, Phone
     }
 

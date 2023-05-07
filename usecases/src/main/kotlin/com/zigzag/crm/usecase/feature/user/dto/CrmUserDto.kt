@@ -17,9 +17,9 @@ enum class CrmUserDto{;
     }
     enum class Response {;
         data class Public(
-            override val id: String?,
-            override val firstName: String?,
-            override val lastName: String?,
+            override val id: String? = null,
+            override val firstName: String? = null,
+            override val lastName: String? = null,
             override val email: String?
         ): Id, FirstName, LastName, Email
     }
