@@ -4,10 +4,10 @@ import com.zigzag.crm.usecase.feature.user.api.Usecase_CreateUser
 import com.zigzag.crm.usecase.feature.user.api.Usecase_FindAllUsers
 import com.zigzag.crm.usecase.feature.user.api.Usecase_FindUserById
 import com.zigzag.crm.usecase.feature.user.dto.CrmUserDto
+import jakarta.annotation.PostConstruct
 import org.springframework.web.bind.annotation.*
 import reactor.core.publisher.Flux
 import reactor.core.publisher.Mono
-import javax.annotation.PostConstruct
 
 @RestController
 @RequestMapping("/users")
