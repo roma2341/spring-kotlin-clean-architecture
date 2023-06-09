@@ -2,18 +2,27 @@ package com.zigzag.crm.module.mongo.repository.lead
 
 import com.zigzag.crm.framework.domain.api.features.lead.ILeadRepository
 import com.zigzag.crm.framework.domain.api.features.lead.Lead
-import com.zigzag.crm.framework.domain.api.features.user.CrmUser
-import com.zigzag.crm.framework.domain.api.features.user.ICrmUserRepository
 import org.springframework.stereotype.Component
 import reactor.core.publisher.Flux
 import reactor.core.publisher.Mono
+import java.lang.RuntimeException
 
 @Component
 class LeadRepository(private val leadRepositoryMongoHelper: LeadRepositoryMongoHelper,
                      private val leadDocumentMapper: LeadDocumentMapper
 ) : ILeadRepository {
+    override fun updateLead(lead: Lead): Mono<Lead> {
+        if(lead.id == null) {
+            throw RuntimeException("Cannot update lead if empty id")
+        }
+        val document = leadDocumentMapper.convertEntityToDocument(lead);
+        return leadRepositoryMongoHelper.save(document).map { u -> leadDocumentMapper.convertDocumentToEntity(u); };
+    }
 
-    override fun createUser(lead: Lead): Mono<Lead> {
+    override fun createLead(lead: Lead): Mono<Lead> {
+        if(lead.id != null) {
+            throw RuntimeException("Cannot create lead with non-empty id")
+        }
         val document = leadDocumentMapper.convertEntityToDocument(lead);
         return leadRepositoryMongoHelper.save(document).map { u -> leadDocumentMapper.convertDocumentToEntity(u); }
     }

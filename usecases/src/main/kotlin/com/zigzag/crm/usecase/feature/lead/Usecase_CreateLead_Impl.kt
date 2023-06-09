@@ -13,7 +13,7 @@ class Usecase_CreateLead_Impl(private val leadRepository: ILeadRepository,
 ): Usecase_CreateLead {
     override fun execute(leadDto: LeadDto.Request.Create): Mono<LeadDto.Response.Public> {
         var user = leadMapper.convertDtoToEntity(leadDto);
-        var persistedUser = leadRepository.createUser(user);
+        var persistedUser = leadRepository.createLead(user);
         return persistedUser.map{lead -> leadMapper.convertEntityToDto(lead)};
     }
 }

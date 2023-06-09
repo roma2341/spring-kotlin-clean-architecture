@@ -19,3 +19,5 @@ pluginManagement {
 }
 include("framework:graphql")
 findProject(":framework:graphql")?.name = "graphql"
+include("framework:schedulers")
+findProject(":framework:schedulers")?.name = "schedulers"

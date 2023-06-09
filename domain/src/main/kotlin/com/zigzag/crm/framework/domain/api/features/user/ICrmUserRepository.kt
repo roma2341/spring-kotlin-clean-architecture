@@ -9,4 +9,5 @@ interface ICrmUserRepository {
     fun createUser(user: CrmUser): Mono<CrmUser>;
     fun findById(id: String): Mono<CrmUser>;
     fun findAll(): Flux<CrmUser>;
+    fun findFirst(): Mono<CrmUser>;
 }

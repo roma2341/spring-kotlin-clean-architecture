@@ -22,6 +22,10 @@ class CrmUserRepository(private val crmUserRepositoryMongoHelper: CrmUserReposit
 
     override fun findAll(): Flux<CrmUser> {
         return crmUserRepositoryMongoHelper.findAll().map { u -> crmUserDocumentMapper.convertDocumentToUser(u)}
+    }
+
+    override fun findFirst(): Mono<CrmUser> {
+        return crmUserRepositoryMongoHelper.findFirst().map { u -> crmUserDocumentMapper.convertDocumentToUser(u)}
     };
 
 }
