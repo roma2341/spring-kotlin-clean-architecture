@@ -41,13 +41,6 @@ class Usecase_AssignLeadToAgent_ImplTest {
     @Test
     fun `should assign lead to agent`() {
         // given
-       /* val userDto = CrmUserDto.Request.Create(firstName = "John",lastName = "Smith", email = "john@example.com")
-        val userEntity = CrmUser(firstName = "John",lastName = "Smith", email = "john@example.com")
-        val persistedEntity = Mono.just(userEntity)
-        Mockito.`when`(crmUserMapper.convertDtoToEntity(userDto)).thenReturn(userEntity)
-        Mockito.`when`(userRepository.createUser(userEntity)).thenReturn(persistedEntity)
-        val expectedResponse = CrmUserDto.Response.Public(firstName = "John",lastName = "Smith", email = "john@example.com")
-        Mockito.`when`(crmUserMapper.convertEntityToDto(userEntity)).thenReturn(expectedResponse)*/
         val agentId = "AGENT_ID";
         val leadId = "LEAD_ID";
         val agent = CrmUser(id=agentId);
