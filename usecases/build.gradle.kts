@@ -24,6 +24,6 @@ dependencies {
     api(projects.domain)
 }
 
-tasks.getByName<Test>("test") {
+tasks.withType<Test> {
     useJUnitPlatform()
 }

@@ -18,7 +18,6 @@ import org.springframework.boot.test.context.SpringBootTest
 import reactor.core.publisher.Mono
 
 @ExtendWith(MockitoExtension::class)
-@SpringBootTest
 class Usecase_CreateUser_ImplTest {
 
     @Mock
@@ -31,7 +30,7 @@ class Usecase_CreateUser_ImplTest {
     private lateinit var usecaseCreateUser: Usecase_CreateUser_Impl
 
     @Test
-    fun `test execute should create a new user`() {
+    fun `should create a new user`() {
         // given
         val userDto = CrmUserDto.Request.Create(firstName = "John",lastName = "Smith", email = "john@example.com")
         val userEntity = CrmUser(firstName = "John",lastName = "Smith", email = "john@example.com")
@@ -49,7 +48,7 @@ class Usecase_CreateUser_ImplTest {
     }
 
     @Test
-    fun `test execute should throw an error when userRepository-createUser() returns an error`() {
+    fun `should throw an error when userRepository-createUser() returns an error`() {
         // given
         val userDto = CrmUserDto.Request.Create(firstName = "John",lastName = "Smith", email = "john@example.com")
         val userEntity = CrmUser(firstName = "John",lastName = "Smith", email = "john@example.com")

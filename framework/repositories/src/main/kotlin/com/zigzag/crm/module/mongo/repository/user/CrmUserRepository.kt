@@ -25,7 +25,7 @@ class CrmUserRepository(private val crmUserRepositoryMongoHelper: CrmUserReposit
     }
 
     override fun findFirst(): Mono<CrmUser> {
-        return crmUserRepositoryMongoHelper.findFirst().map { u -> crmUserDocumentMapper.convertDocumentToUser(u)}
+        return crmUserRepositoryMongoHelper.findSome().map { u -> crmUserDocumentMapper.convertDocumentToUser(u)}
     };
 
 }

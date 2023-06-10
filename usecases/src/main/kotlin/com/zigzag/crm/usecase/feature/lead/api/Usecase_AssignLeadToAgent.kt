@@ -7,6 +7,6 @@ import com.zigzag.crm.usecase.feature.lead.dto.LeadDto
 import org.springframework.stereotype.Component
 import reactor.core.publisher.Mono
 
-@Component
+
 interface Usecase_AssignLeadToAgent : CrmUsecase<Mono<Lead>, AssignLeadToAgentRequest> {
 }

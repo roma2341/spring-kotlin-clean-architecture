@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component
 import org.springframework.web.server.ResponseStatusException
 import reactor.core.publisher.Mono
 
+@Component
 class Usecase_AssignLeadToAgent_Impl(
     val userRepository: ICrmUserRepository,
     val leadRepository: ILeadRepository
