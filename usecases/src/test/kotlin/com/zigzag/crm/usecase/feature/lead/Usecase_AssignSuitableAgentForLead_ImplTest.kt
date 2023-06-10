@@ -1,5 +1,4 @@
 package com.zigzag.crm.usecase.feature.lead
-
 import com.zigzag.crm.framework.domain.api.features.lead.ILeadRepository
 import com.zigzag.crm.framework.domain.api.features.lead.Lead
 import com.zigzag.crm.framework.domain.api.features.user.CrmUser
@@ -26,21 +25,22 @@ class Usecase_AssignSuitableAgentForLead_ImplTest {
     @Mock
     private lateinit var userRepository: ICrmUserRepository
     @Mock
-    private lateinit var usecase_AssignLeadToAgent: Usecase_AssignLeadToAgent;
+    private lateinit var usecase_AssignLeadToAgent: Usecase_AssignLeadToAgent
     @Test
     fun `should find agent for lead`() {
         //given
-        val agentId = "AGENT_ID";
-        val leadId = "LEAD_ID";
-        val agent = CrmUser(id=agentId);
-        val lead = Lead(id=leadId);
-        val expectedLead = Lead(id=leadId,agentId = agentId);
-        val request = AssignLeadToAgentRequest(leadId,agentId);
+        val agentId = "AGENT_ID"
+        val leadId = "LEAD_ID"
+        val agent = CrmUser(id = agentId)
+        val lead = Lead(id = leadId)
+        val expectedLead = Lead(id = leadId, agentId = agentId)
+        val request = AssignLeadToAgentRequest(leadId, agentId)
         Mockito.`when`(userRepository.findFirst()).thenReturn(Mono.just(agent))
-        Mockito.`when`(usecase_AssignLeadToAgent.execute(request)).thenReturn(Mono.just(expectedLead));
+        Mockito.`when`(usecase_AssignLeadToAgent.execute(request)).thenReturn(Mono.just(expectedLead))
         //when
-        val result = usecaseAssignSuitableAgentForLead.execute(leadId).block();
+        val result = usecaseAssignSuitableAgentForLead.execute(leadId).block()
         //then
-        MatcherAssert.assertThat(result, CoreMatchers.equalTo(expectedLead));
+        MatcherAssert.assertThat(result, CoreMatchers.equalTo(expectedLead))
     }
 }
+
