@@ -11,4 +11,5 @@ interface ILeadRepository {
     fun createLead(user: Lead): Mono<Lead>;
     fun findById(id: String): Mono<Lead>;
     fun findAll(): Flux<Lead>;
+    fun find(lead: Lead): Flux<Lead>
 }

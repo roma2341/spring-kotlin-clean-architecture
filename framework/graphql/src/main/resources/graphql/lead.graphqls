@@ -1,0 +1,21 @@
+type Lead {
+    id: ID!
+    firstName: String
+    lastName: String
+    email: String
+}
+input LeadInput {
+    firstName: String
+    lastName: String
+    email: String
+}
+input LeadFilter{
+    firstName: String
+    lastName: String
+}
+extend type Query{
+    findLeads(filter: LeadFilter): [Lead]
+}
+extend type Mutation{
+    createLead(lead: LeadInput): User
+}

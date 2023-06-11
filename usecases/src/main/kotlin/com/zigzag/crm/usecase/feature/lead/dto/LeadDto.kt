@@ -14,6 +14,10 @@ enum class LeadDto{;
                               override val firstName: String? = null,
                               override val lastName: String? = null,
                               override val email: String? = null): FirstName, LastName, Email;
+        public data class Search(
+            override val firstName: String?,
+            override val lastName: String?
+        ): FirstName, LastName
     }
     enum class Response {;
         data class Public(

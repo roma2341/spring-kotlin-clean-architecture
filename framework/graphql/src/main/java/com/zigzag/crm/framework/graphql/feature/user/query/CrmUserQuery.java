@@ -1,4 +1,4 @@
-package com.zigzag.crm.framework.graphql.feature.user.mutation;
+package com.zigzag.crm.framework.graphql.feature.user.query;
 
 import com.zigzag.crm.usecase.feature.user.api.Usecase_FindAllUsers;
 import com.zigzag.crm.usecase.feature.user.dto.CrmUserDto;
