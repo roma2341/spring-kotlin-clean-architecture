@@ -15,7 +15,7 @@ public class LeadQuery {
     private final Usecase_FindLeads usecaseFindLeads;
     private final LeadMapper leadMapper;
     @QueryMapping
-    Flux<LeadDto.Response.Public> findAllLeads()  {
-        return usecaseFindLeads.execute();
+    Flux<LeadDto.Response.Public> findLeads(LeadDto.Request.Search filter)  {
+        return usecaseFindLeads.execute(filter);
     }
 }

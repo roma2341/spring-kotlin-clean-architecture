@@ -6,3 +6,7 @@ crm:
 graphql:
   annotations:
     base-package: com.zigzag.crm.framework.graphql # required
+spring:
+  graphql:
+    graphiql:
+      enabled: true
