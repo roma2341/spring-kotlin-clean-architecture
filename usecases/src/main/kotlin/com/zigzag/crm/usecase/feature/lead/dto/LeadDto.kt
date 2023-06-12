@@ -7,7 +7,7 @@ enum class LeadDto{;
     private interface FirstName { val firstName: String? }
     private interface LastName { val lastName: String? }
     private interface Email{ val email: String? }
-    private interface ILeadFunnelStatus{val leadFunnelStatus: LeadFunnelStatus}
+    private interface ILeadFunnelStatus{val leadFunnelStatus: LeadFunnelStatus?}
 
     enum class Request{;
         public data class Create(
@@ -25,7 +25,7 @@ enum class LeadDto{;
             override val firstName: String? = null,
             override val lastName: String? = null,
             override val email: String? = null,
-            override val leadFunnelStatus: LeadFunnelStatus
+            override val leadFunnelStatus: LeadFunnelStatus? = null
         ): Id, FirstName, LastName, Email, ILeadFunnelStatus
     }
 }
