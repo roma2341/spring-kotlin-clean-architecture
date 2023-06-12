@@ -1,26 +1,26 @@
 package com.zigzag.crm.usecase.feature.user.dto
 
 enum class CrmUserDto{;
-    private interface Id { val id: String? }
-    private interface FirstName { val firstName: String? }
-    private interface LastName { val lastName: String? }
-    private interface Email{ val email: String? }
+    private interface Id { var id: String? }
+    private interface FirstName { var firstName: String? }
+    private interface LastName { var lastName: String? }
+    private interface Email{ var email: String? }
 
     enum class Request{;
         public data class Create(
-                              override val firstName: String?,
-                              override val lastName: String?,
-                              override val email: String?): FirstName, LastName, Email;
+                              override var firstName: String?,
+                              override var lastName: String?,
+                              override var email: String?): FirstName, LastName, Email;
         fun test(){
             val test = Create("test","test","test");
         }
     }
     enum class Response {;
         data class Public(
-            override val id: String? = null,
-            override val firstName: String? = null,
-            override val lastName: String? = null,
-            override val email: String?
+            override var id: String? = null,
+            override var firstName: String? = null,
+            override var lastName: String? = null,
+            override var email: String?
         ): Id, FirstName, LastName, Email
     }
 }

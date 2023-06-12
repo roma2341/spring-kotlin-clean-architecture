@@ -17,5 +17,5 @@ extend type Query{
     findLeads(filter: LeadFilter): [Lead]
 }
 extend type Mutation{
-    createLead(lead: LeadInput): User
+    createLead(lead: LeadInput): Lead
 }
