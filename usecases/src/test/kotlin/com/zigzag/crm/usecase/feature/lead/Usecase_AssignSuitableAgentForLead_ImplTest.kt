@@ -1,11 +1,10 @@
 package com.zigzag.crm.usecase.feature.lead
-import com.zigzag.crm.framework.domain.api.features.lead.ILeadRepository
 import com.zigzag.crm.framework.domain.api.features.lead.Lead
 import com.zigzag.crm.framework.domain.api.features.user.CrmUser
 import com.zigzag.crm.framework.domain.api.features.user.ICrmUserRepository
 import com.zigzag.crm.usecase.feature.lead.api.Usecase_AssignLeadToAgent
-import com.zigzag.crm.usecase.feature.lead.api.Usecase_AssignSuitableAgentForLead
 import com.zigzag.crm.usecase.feature.lead.dto.AssignLeadToAgentRequest
+import com.zigzag.crm.usecase.feature.lead.impl.Usecase_AssignSuitableAgentForLead_Impl
 import org.hamcrest.CoreMatchers
 import org.hamcrest.MatcherAssert
 import org.junit.jupiter.api.Test

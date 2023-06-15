@@ -14,7 +14,8 @@ input LeadFilter{
     lastName: String
 }
 extend type Query{
-    findLeads(filter: LeadFilter): [Lead]
+    lead(id: String): Lead
+    leads(filter: LeadFilter): [Lead]
 }
 extend type Mutation{
     createLead(lead: LeadInput): Lead

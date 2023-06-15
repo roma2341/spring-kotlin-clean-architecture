@@ -1,4 +1,4 @@
-package com.zigzag.crm.usecase.feature.lead
+package com.zigzag.crm.usecase.feature.lead.impl
 
 import com.zigzag.crm.framework.domain.api.features.lead.ILeadRepository
 import com.zigzag.crm.usecase.feature.lead.api.Usecase_FindLeads

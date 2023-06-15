@@ -5,11 +5,10 @@ import com.zigzag.crm.framework.domain.api.features.lead.Lead
 import com.zigzag.crm.framework.domain.api.features.user.CrmUser
 import com.zigzag.crm.framework.domain.api.features.user.ICrmUserRepository
 import com.zigzag.crm.usecase.feature.lead.dto.AssignLeadToAgentRequest
-import com.zigzag.crm.usecase.feature.user.mapper.CrmUserMapper
+import com.zigzag.crm.usecase.feature.lead.impl.Usecase_AssignLeadToAgent_Impl
 import org.hamcrest.CoreMatchers
 import org.hamcrest.MatcherAssert
 import org.junit.jupiter.api.Assertions.*
-import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
 import org.mockito.InjectMocks
