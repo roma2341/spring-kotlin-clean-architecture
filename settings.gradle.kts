@@ -1,11 +1,5 @@
 
 rootProject.name = "crm-clean-architecture"
-include("application")
-include("domain")
-include("usecases")
-include("framework")
-include("framework:controllers")
-include("framework:repositories")
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
@@ -17,7 +11,4 @@ pluginManagement {
         kotlin("plugin.spring") version "1.7.10"
     }
 }
-include("framework:graphql")
-findProject(":framework:graphql")?.name = "graphql"
-include("framework:schedulers")
-findProject(":framework:schedulers")?.name = "schedulers"
+include("users-microservice")
