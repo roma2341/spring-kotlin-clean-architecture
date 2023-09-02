@@ -1,6 +1,6 @@
 package com.zigzag.crm.framework.domain.api.features.contact
 
-import com.zigzag.crm.framework.domain.api.features.common.Ownable
+import org.zigzag.crm.common.Ownable
 
 data class CrmContact(
     val id: String?,

@@ -1,11 +1,11 @@
 package com.zigzag.crm.usecase.feature.contact.api
 
-import com.zigzag.crm.usecase.api.CrmUsecase
 import com.zigzag.crm.usecase.feature.contact.dto.CrmContactDto
 import org.springframework.stereotype.Component
+import org.zigzag.crm.common.usecase.CrmUsecase
 import reactor.core.publisher.Mono
 
 @Component
 interface Usecase_CreateContact :
-    com.zigzag.crm.usecase.api.CrmUsecase<Mono<CrmContactDto.Response.Public>, CrmContactDto.Request.Create> {
+    CrmUsecase<Mono<CrmContactDto.Response.Public>, CrmContactDto.Request.Create> {
 }

@@ -12,3 +12,5 @@ pluginManagement {
     }
 }
 include("users-microservice")
+include("funnel-microservice")
+include("commons")

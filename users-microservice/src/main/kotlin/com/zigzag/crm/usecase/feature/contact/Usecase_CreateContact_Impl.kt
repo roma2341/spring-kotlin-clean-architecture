@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component
 import reactor.core.publisher.Mono
 
 @Component
-class Usecase_CreateContact_Impl : com.zigzag.crm.usecase.feature.contact.api.Usecase_CreateContact {
+class Usecase_CreateContact_Impl : Usecase_CreateContact {
     override fun execute(arg: CrmContactDto.Request.Create): Mono<CrmContactDto.Response.Public> {
         TODO("Not yet implemented")
     }
