@@ -19,7 +19,7 @@ tasks.withType<KotlinCompile> {
 }
 allprojects {
     ext {
-        set("spring_boot_version", "3.0.6")
+        set("spring_boot_version", "3.1.3")
         set("spring_cloud_version", "2022.0.4")
         set("jetbrains_kotlin_version", "1.3.41")
         set("junit_version", "5.9.3")

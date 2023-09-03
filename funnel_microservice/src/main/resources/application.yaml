@@ -2,7 +2,7 @@ server:
   port: 8081
 spring:
   application:
-    name: funnel-microservice
+    name: funnel_microservice
   cloud:
     config:
       uri: http://localhost:8888

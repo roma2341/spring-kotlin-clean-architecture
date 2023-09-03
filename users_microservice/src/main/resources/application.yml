@@ -2,8 +2,9 @@ server:
   port: 8080
 spring:
   application:
-    name: users-microservice
-  config.import: optional:configserver:http://localhost:8888
+    name: users_microservice
+  #cloud.config.url: http://localhost:8888
+  config.import: configserver:http://localhost:8888/
   profiles:
     active:
       - dev
