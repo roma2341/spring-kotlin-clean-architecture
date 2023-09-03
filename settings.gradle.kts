@@ -11,7 +11,7 @@ pluginManagement {
         kotlin("plugin.spring") version "1.7.10"
     }
 }
-include("users-microservice")
-include("funnel-microservice")
+include("users_microservice")
+include("funnel_microservice")
 include("commons")
-include("config-service")
+include("config_service")

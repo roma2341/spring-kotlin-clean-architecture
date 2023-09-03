@@ -4,3 +4,9 @@ spring:
   profiles:
     active:
       - native
+
+  cloud:
+    config:
+      server:
+        native:
+          search-locations=resources/config:

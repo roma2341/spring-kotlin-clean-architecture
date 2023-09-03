@@ -20,6 +20,7 @@ tasks.withType<KotlinCompile> {
 allprojects {
     ext {
         set("spring_boot_version", "3.0.6")
+        set("spring_cloud_version", "2022.0.4")
         set("jetbrains_kotlin_version", "1.3.41")
         set("junit_version", "5.9.3")
     }
@@ -31,5 +32,8 @@ allprojects {
 dependencyManagement {
     dependencies {
         dependency("org.springframework.boot:spring-boot-starter:${rootProject.extra.get("spring_boot_version")}")
+    }
+    imports {
+        mavenBom("org.springframework.cloud:spring-cloud-dependencies:${rootProject.extra.get("spring_cloud_version")}")
     }
 }
