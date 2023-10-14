@@ -1,1 +1,13 @@
 server.port: 8080
+crm:
+  mongo:
+    enabled: true
+    connection: mongodb://localhost:27017/funnel_service
+    name: crm
+graphql:
+  annotations:
+    base-package: com.zigzag.crm.framework.graphql # required
+spring:
+  graphql:
+    graphiql:
+      enabled: true

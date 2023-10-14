@@ -1,8 +1,8 @@
-server.port: 8080
+server.port: 8081
 crm:
   mongo:
     enabled: true
-    connection: mongodb://localhost:27017/crm
+    connection: mongodb://localhost:27017/users_service
     name: crm
 graphql:
   annotations:

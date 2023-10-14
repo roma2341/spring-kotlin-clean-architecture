@@ -3,8 +3,7 @@ server:
 spring:
   application:
     name: funnel_microservice
-  cloud:
-    config:
-      uri: http://localhost:8888
-      fail-fast: true
-      name: funnel_microservice
+  config.import: configserver:http://localhost:8888/
+  profiles:
+    active:
+      - dev
