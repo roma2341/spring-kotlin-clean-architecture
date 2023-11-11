@@ -1,5 +1,4 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-import org.jetbrains.kotlin.kapt3.base.Kapt
 import org.springframework.boot.gradle.tasks.bundling.BootJar
 
 plugins {
