@@ -25,7 +25,6 @@ dependencies {
     implementation(enforcedPlatform("org.springframework.cloud:spring-cloud-dependencies:${rootProject.extra.get("spring_cloud_version")}"))
     implementation("org.springframework.cloud:spring-cloud-config-client")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation(project(mapOf("path" to ":commons")))
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     implementation("org.springframework.boot:spring-boot-starter-webflux")
@@ -38,13 +37,6 @@ dependencies {
     //annotationProcessor("org.mapstruct:mapstruct-processor:1.5.3.Final")
     compileOnly("org.projectlombok:lombok:1.18.26")
     annotationProcessor("org.projectlombok:lombok:1.18.26")
-}
-
-tasks.withType<KotlinCompile> {
-    kotlinOptions {
-        freeCompilerArgs = listOf("-Xjsr305=strict")
-        jvmTarget = "17"
-    }
 }
 
 tasks.withType<Test> {

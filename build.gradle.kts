@@ -1,10 +1,10 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.9.20"
-    kotlin("plugin.spring") version "1.9.20"
+    kotlin("jvm")
+    kotlin("plugin.spring")
     id("org.springframework.boot")
-    id("io.spring.dependency-management") version "1.0.12.RELEASE"
+    id("io.spring.dependency-management")
 }
 
 group = "com.zigzag.crm"
@@ -28,6 +28,14 @@ allprojects {
     apply(plugin = "io.spring.dependency-management")
 }
 
+subprojects {
+    tasks.withType<KotlinCompile> {
+        kotlinOptions {
+            freeCompilerArgs = listOf("-Xjsr305=strict")
+            jvmTarget = "17"
+        }
+    }
+}
 
 dependencyManagement {
     dependencies {

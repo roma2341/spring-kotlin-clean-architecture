@@ -1,6 +1,11 @@
 spring:
   application:
     name: api_gateway_service
+  config:
+    import: configserver:http://localhost:8888/
+  profiles:
+    active:
+      - dev
   cloud:
     gateway:
       routes:

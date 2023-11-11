@@ -1,4 +1,13 @@
+spring:
+  application:
+    name: service_registry
+  config:
+    import: configserver:http://localhost:8888/
+  profiles:
+    active:
+      - dev
 eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
+

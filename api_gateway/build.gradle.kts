@@ -15,6 +15,7 @@ dependencies {
     implementation(kotlin("stdlib"))
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
     testImplementation("org.junit.jupiter:junit-jupiter")
+    implementation("org.springframework.cloud:spring-cloud-config-client")
     implementation(enforcedPlatform("org.springframework.cloud:spring-cloud-dependencies:${rootProject.extra.get("spring_cloud_version")}"))
     implementation("org.springframework.cloud:spring-cloud-starter-gateway")
 }

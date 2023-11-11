@@ -22,18 +22,11 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib"))
     implementation("org.jetbrains.kotlin:kotlin-reflect")
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("org.springframework.boot:spring-boot-starter")
     implementation("org.springframework.cloud:spring-cloud-config-server:4.0.4")
     compileOnly("org.springframework.boot:spring-boot-devtools")
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
     testImplementation("org.junit.jupiter:junit-jupiter")
-}
-tasks.withType<KotlinCompile> {
-    kotlinOptions {
-        freeCompilerArgs = listOf("-Xjsr305=strict")
-        jvmTarget = "17"
-    }
 }
 
 tasks.test {
