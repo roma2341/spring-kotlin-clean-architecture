@@ -6,8 +6,8 @@ import org.springframework.context.annotation.ComponentScan
 
 @ComponentScan(basePackages = ["com.zigzag.crm.*"])
 @SpringBootApplication
-class Application
+class UserMicroserviceApplication
 
 fun main(args: Array<String>) {
-    runApplication<Application>(*args)
+    runApplication<UserMicroserviceApplication>(*args)
 }

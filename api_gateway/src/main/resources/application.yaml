@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: api_gateway_service
+  cloud:
+    gateway:
+      routes:
+        - id: funnel_microservice
+          predicates:
+            - Path=/funnel/
+          uri: localhost:8081
+        - id: users_microservice
+          predicates:
+            - Path=/user/
+          uri: localhost:8082
