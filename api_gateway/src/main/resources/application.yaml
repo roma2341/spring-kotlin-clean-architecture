@@ -2,11 +2,16 @@ spring:
   application:
     name: api_gateway_service
   config:
-    import: configserver:http://localhost:8888/
+    import: "optional:configserver:"
   profiles:
     active:
       - dev
   cloud:
+    config:
+      fail-fast: true
+      discovery:
+        enabled: true
+        serviceId: config_service
     gateway:
       routes:
         - id: funnel_microservice

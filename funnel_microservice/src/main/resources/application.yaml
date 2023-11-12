@@ -1,7 +1,13 @@
 spring:
   application:
     name: funnel_microservice
-  config.import: configserver:http://localhost:8888/
+  config.import: "optional:configserver:"
+  cloud:
+    config:
+      fail-fast: true
+      discovery:
+        enabled: true
+        serviceId: config_service
   profiles:
     active:
       - dev
