@@ -21,6 +21,7 @@ dependencies {
     implementation("org.springframework.cloud:spring-cloud-config-client")
     implementation(enforcedPlatform("org.springframework.cloud:spring-cloud-dependencies:${rootProject.extra.get("spring_cloud_version")}"))
     implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-server")
+    compileOnly("org.springframework.boot:spring-boot-devtools")
 }
 
 tasks.test {

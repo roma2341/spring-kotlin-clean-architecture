@@ -38,6 +38,7 @@ dependencies {
     //annotationProcessor("org.mapstruct:mapstruct-processor:1.5.3.Final")
     compileOnly("org.projectlombok:lombok:1.18.26")
     annotationProcessor("org.projectlombok:lombok:1.18.26")
+    compileOnly("org.springframework.boot:spring-boot-devtools")
 }
 
 tasks.withType<Test> {
