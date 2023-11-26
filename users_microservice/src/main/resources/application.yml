@@ -8,7 +8,7 @@ spring:
       fail-fast: true
       discovery:
         enabled: true
-        serviceId: config_service
+        serviceId: config-service
   profiles:
     active:
       - dev

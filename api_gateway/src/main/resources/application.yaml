@@ -11,7 +11,7 @@ spring:
       fail-fast: true
       discovery:
         enabled: true
-        serviceId: config_service
+        serviceId: config-service
     gateway:
       routes:
         - id: funnel-microservice
@@ -20,7 +20,7 @@ spring:
           uri: lb://funnel-microservice
         - id: users-microservice
           predicates:
-            - Path=/user/**
+            - Path=/users/**
           uri: lb://users-microservice
 eureka:
   client:
