@@ -1,6 +1,6 @@
 spring:
   application:
-    name: funnel_microservice
+    name: funnel-microservice
   config.import: "optional:configserver:"
   cloud:
     config:

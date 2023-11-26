@@ -14,14 +14,14 @@ spring:
         serviceId: config_service
     gateway:
       routes:
-        - id: funnel_microservice
+        - id: funnel-microservice
           predicates:
             - Path=/funnel/
-          uri: localhost:8081
-        - id: users_microservice
+          uri: lb://funnel-microservice
+        - id: users-microservice
           predicates:
-            - Path=/user/
-          uri: localhost:8082
+            - Path=/user/**
+          uri: lb://users-microservice
 eureka:
   client:
     serviceUrl:

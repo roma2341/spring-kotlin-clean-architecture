@@ -1,6 +1,6 @@
 spring:
   application:
-    name: users_microservice
+    name: users-microservice
   #cloud.config.url: http://localhost:8888
   config.import: "optional:configserver:"
   cloud:
