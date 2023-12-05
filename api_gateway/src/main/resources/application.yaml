@@ -20,8 +20,10 @@ spring:
           uri: lb://funnel-microservice
         - id: users-microservice
           predicates:
-            - Path=/users/**
+            - Path=/api/user/**
           uri: lb://users-microservice
+          filters:
+            - RewritePath=/api/user(?<segment>.*),/user$\{segment}
 eureka:
   client:
     serviceUrl:

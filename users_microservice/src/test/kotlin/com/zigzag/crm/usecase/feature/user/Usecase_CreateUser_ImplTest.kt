@@ -3,8 +3,8 @@ package com.zigzag.crm.usecase.feature.user
 import com.zigzag.crm.framework.domain.api.features.user.CrmUser
 import com.zigzag.crm.framework.domain.api.features.user.ICrmUserRepository
 import com.zigzag.crm.usecase.feature.user.dto.CrmUserDto
+import com.zigzag.crm.usecase.feature.user.impl.Usecase_CreateUser_Impl
 import com.zigzag.crm.usecase.feature.user.mapper.CrmUserMapper
-import org.hamcrest.CoreMatchers
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test
@@ -14,7 +14,6 @@ import org.mockito.InjectMocks
 import org.mockito.Mock
 import org.mockito.Mockito.`when`
 import org.mockito.junit.jupiter.MockitoExtension
-import org.springframework.boot.test.context.SpringBootTest
 import reactor.core.publisher.Mono
 
 @ExtendWith(MockitoExtension::class)

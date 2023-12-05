@@ -1,4 +1,4 @@
-package com.zigzag.crm.usecase.feature.user
+package com.zigzag.crm.usecase.feature.user.impl
 
 import com.zigzag.crm.framework.domain.api.features.user.ICrmUserRepository
 import com.zigzag.crm.usecase.feature.user.api.Usecase_CreateUser

@@ -10,9 +10,7 @@ enum class CrmUserDto{;
         public data class Create(
                               override var firstName: String?,
                               override var lastName: String?,
-                              override var email: String?): com.zigzag.crm.usecase.feature.user.dto.CrmUserDto.FirstName,
-            com.zigzag.crm.usecase.feature.user.dto.CrmUserDto.LastName,
-            com.zigzag.crm.usecase.feature.user.dto.CrmUserDto.Email;
+                              override var email: String?): FirstName, LastName, Email;
         fun test(){
             val test = com.zigzag.crm.usecase.feature.user.dto.CrmUserDto.Request.Create("test", "test", "test");
         }
@@ -23,10 +21,7 @@ enum class CrmUserDto{;
             override var firstName: String? = null,
             override var lastName: String? = null,
             override var email: String?
-        ): com.zigzag.crm.usecase.feature.user.dto.CrmUserDto.Id,
-            com.zigzag.crm.usecase.feature.user.dto.CrmUserDto.FirstName,
-            com.zigzag.crm.usecase.feature.user.dto.CrmUserDto.LastName,
-            com.zigzag.crm.usecase.feature.user.dto.CrmUserDto.Email
+        ): Id, FirstName, LastName, Email
     }
 }
     /*data class CrmUserDto(val id:Long,
