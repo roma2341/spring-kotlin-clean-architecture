@@ -16,8 +16,10 @@ spring:
       routes:
         - id: funnel-microservice
           predicates:
-            - Path=/funnel/
+            - Path=/funnel-microservice/**
           uri: lb://funnel-microservice
+          filters:
+            - RewritePath=/funnel-microservice/(?<segment>.*),/$\{segment}
         - id: users-microservice
           predicates:
             - Path=/users-microservice/**
@@ -44,3 +46,6 @@ springdoc:
       - url: /users-microservice/v3/api-docs
         name: User Service
         display-name: User Service
+      - url: /funnel-microservice/v3/api-docs
+        name: Funnel Service
+        display-name: Funnel Service

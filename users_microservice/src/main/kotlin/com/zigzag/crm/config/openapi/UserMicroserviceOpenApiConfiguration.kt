@@ -12,7 +12,7 @@ import java.util.List
 
 @OpenAPIDefinition
 @Configuration
-class OpenApiConfiguration {
+class UserMicroserviceOpenApiConfiguration {
     @Bean
     fun customOpenAPI(
         @Value("\${openapi.service.title}") serviceTitle: String?,
