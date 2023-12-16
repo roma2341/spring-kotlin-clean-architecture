@@ -16,3 +16,8 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+openapi:
+  service:
+    title: User service
+    version: 0.0.1
+    url: https://localhost:8080

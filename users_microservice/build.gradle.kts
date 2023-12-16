@@ -35,6 +35,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-graphql")
     implementation("org.springframework.boot:spring-boot-starter-data-mongodb-reactive")
     implementation("org.mapstruct:mapstruct:1.5.3.Final")
+    implementation("org.springdoc:springdoc-openapi-starter-webflux-ui:2.3.0")
     kapt("org.mapstruct:mapstruct-processor:1.5.3.Final")
     //annotationProcessor("org.mapstruct:mapstruct-processor:1.5.3.Final")
     compileOnly("org.projectlombok:lombok:1.18.26")
