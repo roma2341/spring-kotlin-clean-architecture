@@ -20,4 +20,4 @@ openapi:
   service:
     title: User service
     version: 0.0.1
-    url: https://localhost:8080
+    url: http://localhost:8080/users-microservice

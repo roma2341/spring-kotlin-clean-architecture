@@ -35,5 +35,10 @@ fun routeLocator(builder: RouteLocatorBuilder): RouteLocator {
                 "/funnel-microservice/v3/api-docs"
             ).and().method(HttpMethod.GET).uri("lb://funnel-microservice")
         }
+        .route { r: PredicateSpec ->
+            r.path(
+                "/users-microservice/api/user"
+            ).and().method(HttpMethod.GET).uri("lb://users-microservice")
+        }
         .build()
 }

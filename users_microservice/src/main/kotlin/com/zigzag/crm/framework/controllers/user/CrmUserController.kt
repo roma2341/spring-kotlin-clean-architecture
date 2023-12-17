@@ -10,7 +10,7 @@ import reactor.core.publisher.Flux
 import reactor.core.publisher.Mono
 
 @RestController
-@RequestMapping("user")
+@RequestMapping("api/user/v1")
 class CrmUserController(
     private val usecaseCreateUser: Usecase_CreateUser,
     private val usecaseFindUserById: Usecase_FindUserById,
