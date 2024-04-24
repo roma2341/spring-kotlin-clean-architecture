@@ -2,7 +2,6 @@
   <configuration default="false" name="ServiceRegistryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" folderName="Default" nameIsGenerated="true">
     <module name="crm-clean-architecture.service_registry.main" />
     <option name="SPRING_BOOT_MAIN_CLASS" value="com.zigzag.crm.application.ServiceRegistryApplication" />
-    <option name="VM_PARAMETERS" value="-XX:+AllowEnhancedClassRedefinition" />
     <method v="2">
       <option name="Make" enabled="true" />
     </method>

@@ -2,7 +2,6 @@
   <configuration default="false" name="SpringCloudConfigServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" folderName="Default" nameIsGenerated="true">
     <module name="crm-clean-architecture.config_service.main" />
     <option name="SPRING_BOOT_MAIN_CLASS" value="com.zigzag.crm.SpringCloudConfigServer" />
-    <option name="VM_PARAMETERS" value="-XX:+AllowEnhancedClassRedefinition" />
     <method v="2">
       <option name="Make" enabled="true" />
     </method>
