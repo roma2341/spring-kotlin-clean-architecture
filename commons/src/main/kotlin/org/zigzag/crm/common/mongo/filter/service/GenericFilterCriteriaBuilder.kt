@@ -91,7 +91,7 @@ class GenericFilterCriteriaBuilder {
                 Criteria.where(condition.field).lte(condition.value)
             }
             FILTER_CRITERIA.put(FilterOperator.CONTAINS) { condition ->
-                Criteria.where(condition.field).regex(condition.value as String)
+                Criteria.where(condition.field).regex(condition.value)
             }
             FILTER_CRITERIA.put(FilterOperator.JOIN) { condition -> Criteria.where(condition.field).`is`(condition.value) }
         }

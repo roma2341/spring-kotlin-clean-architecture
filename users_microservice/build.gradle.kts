@@ -4,14 +4,14 @@ import org.springframework.boot.gradle.tasks.bundling.BootJar
 plugins {
     id("org.springframework.boot")
     id("io.spring.dependency-management")
+    id("com.google.devtools.ksp")
     kotlin("jvm")
     kotlin("plugin.spring")
-    kotlin("kapt")
 }
 
 group = "org.zigzag"
 version = "1.0-SNAPSHOT"
-java.sourceCompatibility = JavaVersion.VERSION_17
+java.sourceCompatibility = JavaVersion.VERSION_21
 
 repositories {
     mavenCentral()
@@ -34,10 +34,11 @@ dependencies {
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
     implementation("org.springframework.boot:spring-boot-starter-graphql")
     implementation("org.springframework.boot:spring-boot-starter-data-mongodb-reactive")
-    implementation("org.mapstruct:mapstruct:1.5.3.Final")
     implementation("org.springdoc:springdoc-openapi-starter-webflux-ui:2.3.0")
-    kapt("org.mapstruct:mapstruct-processor:1.5.3.Final")
-    //annotationProcessor("org.mapstruct:mapstruct-processor:1.5.3.Final")
+    ksp("io.mcarle:konvert:${rootProject.extra.get("mcarle_konvert_version")}")
+    implementation("io.mcarle:konvert-api:${rootProject.extra.get("mcarle_konvert_version")}")
+    implementation("io.mcarle:konvert-spring-annotations:${rootProject.extra.get("mcarle_konvert_spring_injector_version")}")
+    ksp("io.mcarle:konvert-spring-injector:${rootProject.extra.get("konvert_spring_injector_version")}")
     compileOnly("org.projectlombok:lombok:1.18.26")
     annotationProcessor("org.projectlombok:lombok:1.18.26")
     compileOnly("org.springframework.boot:spring-boot-devtools")

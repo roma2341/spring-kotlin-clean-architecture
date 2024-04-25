@@ -10,6 +10,7 @@ import reactor.core.publisher.Mono
 @Component
 class Usecase_FindSuitableAgentForLeadImpl(private val leadRepository: LeadRepository) : Usecase_FindSuitableAgentForLead {
     override fun execute(leadId: String): Mono<Lead> {
-        return leadRepository.find()
+        var leadToSearch = Lead();
+        return leadRepository.find(leadToSearch).next();
     }
 }

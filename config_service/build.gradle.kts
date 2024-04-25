@@ -6,12 +6,12 @@ plugins {
     id("io.spring.dependency-management")
     kotlin("jvm")
     kotlin("plugin.spring")
-    kotlin("kapt")
+    id("com.google.devtools.ksp") apply false
 }
 
 group = "org.zigzag.crm"
 version = "1.0-SNAPSHOT"
-java.sourceCompatibility = JavaVersion.VERSION_17
+java.sourceCompatibility = JavaVersion.VERSION_21
 
 repositories {
     mavenCentral()

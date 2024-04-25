@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     id("java")
     kotlin("jvm")
-    kotlin("kapt")
+    id("com.google.devtools.ksp") apply false
 }
 
 group = "com.zigzag.crm"

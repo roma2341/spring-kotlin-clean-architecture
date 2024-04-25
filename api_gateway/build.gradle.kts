@@ -1,7 +1,6 @@
 plugins {
     id("java")
     kotlin("jvm")
-    kotlin("kapt")
 }
 
 group = "com.zigzag.crm"
