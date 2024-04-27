@@ -6,13 +6,12 @@ import org.springframework.stereotype.Component
 import reactor.core.publisher.Mono
 
 @Component
-class CrmContactRepository(private val crmContactRepositoryMongoHelper: CrmContactRepositoryMongoHelper,
-                           private val crmContactDocumentMapper: CrmContactDocumentMapper
+class CrmContactRepository(private val crmContactRepositoryMongoHelper: CrmContactRepositoryMongoHelper
 ) :
     ICrmContactRepository {
     override fun createContact(contact: CrmContact): Mono<CrmContact> {
-        val document = crmContactDocumentMapper.convertEntityToDocument(contact);
+        val document = CrmContactDocumentMapper.convertEntityToDocument(contact);
         var documentMono = crmContactRepositoryMongoHelper.save(document);
-        return documentMono.map { d -> crmContactDocumentMapper.convertDocumentToEntity(d) }
+        return documentMono.map { d -> CrmContactDocumentMapper.convertDocumentToEntity(d) }
     }
 }

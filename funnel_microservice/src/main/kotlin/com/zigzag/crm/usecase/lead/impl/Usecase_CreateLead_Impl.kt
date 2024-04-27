@@ -8,12 +8,11 @@ import org.springframework.stereotype.Component
 import reactor.core.publisher.Mono
 
 @Component
-class Usecase_CreateLead_Impl(private val leadRepository: ILeadRepository,
-                              private val leadMapper: LeadMapper
+class Usecase_CreateLead_Impl(private val leadRepository: ILeadRepository
 ): Usecase_CreateLead {
     override fun execute(leadDto: LeadDto.Request.Create): Mono<LeadDto.Response.Public> {
-        var user = leadMapper.convertDtoToEntity(leadDto);
+        var user = LeadMapper.convertDtoToEntity(leadDto);
         var persistedUser = leadRepository.createLead(user);
-        return persistedUser.map{lead -> leadMapper.convertEntityToDto(lead)};
+        return persistedUser.map{lead -> LeadMapper.convertEntityToDto(lead)};
     }
 }

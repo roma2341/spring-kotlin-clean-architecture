@@ -8,36 +8,35 @@ import reactor.core.publisher.Flux
 import reactor.core.publisher.Mono
 
 @Component
-class LeadRepository(private val leadRepositoryMongoHelper: LeadRepositoryMongoHelper,
-                     private val leadDocumentMapper: LeadDocumentMapper
+class LeadRepository(private val leadRepositoryMongoHelper: LeadRepositoryMongoHelper
 ) : ILeadRepository {
     override fun updateLead(lead: Lead): Mono<Lead> {
         if(lead.id == null) {
             throw RuntimeException("Cannot update lead if empty id")
         }
-        val document = leadDocumentMapper.convertEntityToDocument(lead);
-        return leadRepositoryMongoHelper.save(document).map { u -> leadDocumentMapper.convertDocumentToEntity(u); };
+        val document = LeadDocumentMapper.convertEntityToDocument(lead);
+        return leadRepositoryMongoHelper.save(document).map { u -> LeadDocumentMapper.convertDocumentToEntity(u); };
     }
 
     override fun createLead(lead: Lead): Mono<Lead> {
         if(lead.id != null) {
             throw RuntimeException("Cannot create lead with non-empty id")
         }
-        val document = leadDocumentMapper.convertEntityToDocument(lead);
-        return leadRepositoryMongoHelper.save(document).map { u -> leadDocumentMapper.convertDocumentToEntity(u); }
+        val document = LeadDocumentMapper.convertEntityToDocument(lead);
+        return leadRepositoryMongoHelper.save(document).map { u -> LeadDocumentMapper.convertDocumentToEntity(u); }
     }
 
     override fun findById(id: String): Mono<Lead> {
-        return leadRepositoryMongoHelper.findById(id).map { u -> leadDocumentMapper.convertDocumentToEntity(u) }
+        return leadRepositoryMongoHelper.findById(id).map { u -> LeadDocumentMapper.convertDocumentToEntity(u) }
     }
 
     override fun findAll(): Flux<Lead> {
-        return leadRepositoryMongoHelper.findAll().map { u -> leadDocumentMapper.convertDocumentToEntity(u)}
+        return leadRepositoryMongoHelper.findAll().map { u -> LeadDocumentMapper.convertDocumentToEntity(u)}
     }
 
     override fun find(lead: Lead): Flux<Lead> {
-        var document = leadDocumentMapper.convertEntityToDocument(lead);
-        return leadRepositoryMongoHelper.findAll(Example.of(document)).map{ doc -> leadDocumentMapper.convertDocumentToEntity(doc)};
+        var document = LeadDocumentMapper.convertEntityToDocument(lead);
+        return leadRepositoryMongoHelper.findAll(Example.of(document)).map{ doc -> LeadDocumentMapper.convertDocumentToEntity(doc)};
     };
 
 }

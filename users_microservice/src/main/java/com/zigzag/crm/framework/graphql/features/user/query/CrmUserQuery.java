@@ -14,8 +14,6 @@ import reactor.core.publisher.Flux;
 public class CrmUserQuery {
     @Autowired
     private  Usecase_FindAllUsers usecaseFindAllUsers;
-    @Autowired
-    private  CrmUserMapper crmUserMapper;
     @PostConstruct
     public void graphiqlInited(){
         System.out.println("Graphiql inited");
