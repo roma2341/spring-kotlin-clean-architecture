@@ -36,7 +36,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-mongodb-reactive")
     implementation("org.springdoc:springdoc-openapi-starter-webflux-ui:2.3.0")
     compileOnly("org.projectlombok:lombok:1.18.26")
-    annotationProcessor("org.projectlombok:lombok:1.18.26")
+    annotationProcessor("org.projectlombok:lombok:1.18.30")
     compileOnly("org.springframework.boot:spring-boot-devtools")
 }
 
