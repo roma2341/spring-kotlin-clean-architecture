@@ -29,7 +29,10 @@ class Usecase_AssignSuitableAgentForLead_ImplTest {
         val leadId = "LEAD_ID"
         val lead = Lead(id = leadId)
         val expectedLead = Lead(id = leadId, agentId = agentId)
-        val request = AssignLeadToAgentRequest(leadId, agentId)
+        val request = AssignLeadToAgentRequest(
+            leadId=leadId,
+            agentId=agentId
+        )
         Mockito.`when`(usecase_AssignLeadToAgent.execute(request)).thenReturn(Mono.just(expectedLead))
         //when
         val result = usecaseAssignSuitableAgentForLead.execute(leadId).block()

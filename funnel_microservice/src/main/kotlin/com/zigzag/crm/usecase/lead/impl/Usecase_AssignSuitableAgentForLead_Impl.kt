@@ -10,11 +10,15 @@ import reactor.core.publisher.Mono
 
 @Component
 class Usecase_AssignSuitableAgentForLead_Impl(
-    val usecaseFindSuitableAgentForLead: Usecase_FindSuitableAgentForLead,
     val usecaseAssignLeadToAgent: Usecase_AssignLeadToAgent
+    val userRepository
 ) : Usecase_AssignSuitableAgentForLead {
     override fun execute(leadId: String): Mono<Lead> {
         //return usecaseFindSuitableAgentForLead.execute()
-        return  usecaseAssignLeadToAgent.execute(AssignLeadToAgentRequest(leadId, leadId));
+        return  usecaseAssignLeadToAgent.execute(
+            AssignLeadToAgentRequest(
+            leadId = leadId,
+            agentId = ag)
+        );
     }
 }
