@@ -8,9 +8,10 @@ import org.springframework.stereotype.Component
 import reactor.core.publisher.Flux
 
 @Component
-class Usecase_FindAllUsers_Impl(private val userRepository: ICrmUserRepository
+class Usecase_FindAllUsers_Impl(private val userRepository: ICrmUserRepository,
+    private val crmUserMapper: CrmUserMapper
 ) : com.zigzag.crm.usecase.feature.user.api.Usecase_FindAllUsers {
     override fun execute(): Flux<CrmUserDto.Response.Public> {
-       return userRepository.findAll().map{usr -> CrmUserMapper.convertEntityToDto(usr)};
+       return userRepository.findAll().map{usr -> crmUserMapper.convertEntityToDto(usr)};
     }
 }

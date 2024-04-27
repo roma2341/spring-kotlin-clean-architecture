@@ -1,9 +1,11 @@
-package com.zigzag.crm.framework.mongo.lead
+package com.zigzag.crm.framework.mongo.lead.mapper
 
 import com.zigzag.crm.framework.domain.api.features.lead.Lead
+import com.zigzag.crm.framework.mongo.lead.LeadDocument
+import org.springframework.stereotype.Component
 
-abstract class LeadDocumentMapper {
-    companion object {
+@Component
+class LeadDocumentMapperImpl {
         fun convertDocumentToEntity(document: LeadDocument): Lead {
             return Lead(
                 id = document.id,
@@ -21,5 +23,4 @@ abstract class LeadDocumentMapper {
                 email = lead.email
             )
         }
-    }
 }

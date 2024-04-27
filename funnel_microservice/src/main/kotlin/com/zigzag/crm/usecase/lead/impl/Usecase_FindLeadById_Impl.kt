@@ -8,10 +8,11 @@ import org.springframework.stereotype.Component
 import reactor.core.publisher.Mono
 
 @Component
-class Usecase_FindLeadById_Impl(private val leadRepository: ILeadRepository
+class Usecase_FindLeadById_Impl(private val leadRepository: ILeadRepository,
+    private val leadMapper: LeadMapper
 ) : Usecase_FindLeadById {
     override fun execute(id: String): Mono<LeadDto.Response.Public> {
         val lead = leadRepository.findById(id);
-        return lead.map{LeadMapper.convertEntityToDto(it)}
+        return lead.map{leadMapper.convertEntityToDto(it)}
     }
 }

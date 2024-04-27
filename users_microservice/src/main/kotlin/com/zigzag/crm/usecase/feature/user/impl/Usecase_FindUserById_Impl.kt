@@ -9,12 +9,13 @@ import reactor.core.publisher.Mono
 
 @Component
 class Usecase_FindUserById_Impl(
-    private val userRepository: ICrmUserRepository
+    private val userRepository: ICrmUserRepository,
+    private val crmUserMapper: CrmUserMapper
 ): com.zigzag.crm.usecase.feature.user.api.Usecase_FindUserById {
 
     override fun execute(userId: String): Mono<CrmUserDto.Response.Public> {
         val user = userRepository.findById(userId);
-        return user.map{usr -> CrmUserMapper.convertEntityToDto(usr)};
+        return user.map{usr -> crmUserMapper.convertEntityToDto(usr)};
     }
 
 }
