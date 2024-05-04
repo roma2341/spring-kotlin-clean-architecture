@@ -1,11 +1,12 @@
 package com.zigzag.crm.framework.rest.user;
 
 import com.zigzag.crm.framework.rest.user.dto.CrmUserDto
-import org.springframework.cloud.openfeign.FeignClient
 import org.springframework.web.bind.annotation.GetMapping
+import reactivefeign.spring.config.ReactiveFeignClient
+import reactor.core.publisher.Flux
 
-@FeignClient(name = "users-microservice")
+@ReactiveFeignClient(name = "users-microservice")
 interface CrmUserRestClient {
     @GetMapping("api/user/v1")
-    fun getUsers(): List<CrmUserDto.Response.Public>
+    fun getUsers(): Flux<CrmUserDto.Response.Public>
 }
