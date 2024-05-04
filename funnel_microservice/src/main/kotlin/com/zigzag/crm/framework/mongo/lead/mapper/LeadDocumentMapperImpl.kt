@@ -5,8 +5,8 @@ import com.zigzag.crm.framework.mongo.lead.LeadDocument
 import org.springframework.stereotype.Component
 
 @Component
-class LeadDocumentMapperImpl {
-        fun convertDocumentToEntity(document: LeadDocument): Lead {
+class LeadDocumentMapperImpl:LeadDocumentMapper {
+        override fun convertDocumentToEntity(document: LeadDocument): Lead {
             return Lead(
                 id = document.id,
                 firstName = document.firstName,
@@ -15,7 +15,7 @@ class LeadDocumentMapperImpl {
             )
         }
 
-        fun convertEntityToDocument(lead: Lead): LeadDocument {
+    override fun convertEntityToDocument(lead: Lead): LeadDocument {
             return LeadDocument(
                 id = lead.id,
                 firstName = lead.firstName,
