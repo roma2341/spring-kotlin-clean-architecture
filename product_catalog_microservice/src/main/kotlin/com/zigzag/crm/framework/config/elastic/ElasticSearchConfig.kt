@@ -5,5 +5,4 @@ import org.springframework.data.elasticsearch.repository.config.EnableReactiveEl
 
 @Configuration
 @EnableReactiveElasticsearchRepositories(basePackages = ["com.zigzag.crm"])
-class ElasticSearchConfig {
-}
+class ElasticSearchConfig
