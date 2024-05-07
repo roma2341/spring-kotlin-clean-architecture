@@ -46,5 +46,5 @@ tasks.withType<Test> {
 }
 tasks.register("prepareKotlinBuildScriptModel") {}
 tasks.getByName<BootJar>("bootJar") {
-    mainClass.set("com.zigzag.crm.application.Application")
+    mainClass.set("com.zigzag.crm.framework.application.FunnelMicroserviceApplication")
 }
