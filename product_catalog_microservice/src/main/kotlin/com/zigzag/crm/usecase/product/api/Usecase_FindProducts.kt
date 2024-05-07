@@ -8,4 +8,5 @@ import reactor.core.publisher.Flux
 @Usecase
 interface Usecase_FindProducts:
     CrmUsecase<Flux<ProductDto.Response.Public>, String> {
+
 }

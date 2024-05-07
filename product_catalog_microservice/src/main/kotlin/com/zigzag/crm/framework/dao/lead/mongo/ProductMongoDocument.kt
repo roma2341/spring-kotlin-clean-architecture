@@ -1,10 +1,10 @@
-package com.zigzag.crm.framework.mongo.lead
+package com.zigzag.crm.framework.dao.lead.mongo
 
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
 
 @Document("product")
-data class ProductDocument(
+data class ProductMongoDocument(
     @Id
     val id:String?,
     val name:String?)
