@@ -1,4 +1,4 @@
-package com.zigzag.crm.application
+package com.zigzag.crm.framework.application
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

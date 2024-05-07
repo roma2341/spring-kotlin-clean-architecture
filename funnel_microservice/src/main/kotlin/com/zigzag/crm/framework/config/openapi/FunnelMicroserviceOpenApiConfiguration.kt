@@ -1,4 +1,4 @@
-package com.zigzag.crm.config.openapi
+package com.zigzag.crm.framework.config.openapi
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition
 import io.swagger.v3.oas.models.OpenAPI
@@ -12,7 +12,7 @@ import java.util.List
 
 @OpenAPIDefinition
 @Configuration
-class UserMicroserviceOpenApiConfiguration {
+class FunnelMicroserviceOpenApiConfiguration {
     @Bean
     fun customOpenAPI(
         @Value("\${openapi.service.title}") serviceTitle: String?,
