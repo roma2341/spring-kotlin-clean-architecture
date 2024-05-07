@@ -26,6 +26,12 @@ spring:
           uri: lb://users-microservice
           filters:
             - RewritePath=/users-microservice/(?<segment>.*),/$\{segment}
+        - id: product-catalog-microservice
+          predicates:
+            - Path=/product-catalog-microservice/**
+          uri: lb://product-catalog-microservice
+          filters:
+            - RewritePath=/product-catalog-microservice/(?<segment>.*),/$\{segment}
 eureka:
   client:
     serviceUrl:

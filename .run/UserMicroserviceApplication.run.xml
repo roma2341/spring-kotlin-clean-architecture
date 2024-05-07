@@ -1,7 +1,7 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="UserMicroserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" folderName="Default" nameIsGenerated="true">
     <module name="crm-clean-architecture.users_microservice.main" />
-    <option name="SPRING_BOOT_MAIN_CLASS" value="com.zigzag.crm.application.UserMicroserviceApplication" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.zigzag.crm.framework.application.UserMicroserviceApplication" />
     <extension name="coverage">
       <pattern>
         <option name="PATTERN" value="com.zigzag.crm.application.*" />
