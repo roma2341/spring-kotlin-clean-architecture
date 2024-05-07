@@ -1,0 +1,13 @@
+server.port: 8083
+crm:
+  mongo:
+    enabled: true
+    connection: mongodb://localhost:27017/product_catalog_service
+    name: crm
+graphql:
+  annotations:
+    base-package: com.zigzag.crm.framework.graphql # required
+spring:
+  graphql:
+    graphiql:
+      enabled: true

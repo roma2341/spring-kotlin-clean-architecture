@@ -14,6 +14,7 @@ pluginManagement {
 }
 include("users_microservice")
 include("funnel_microservice")
+include("product_catalog_microservice")
 include("commons")
 include("config_service")
 include("api_gateway")

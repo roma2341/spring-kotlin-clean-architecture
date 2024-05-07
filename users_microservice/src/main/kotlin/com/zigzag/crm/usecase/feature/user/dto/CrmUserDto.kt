@@ -11,9 +11,6 @@ enum class CrmUserDto{;
                               override var firstName: String?,
                               override var lastName: String?,
                               override var email: String?): FirstName, LastName, Email;
-        fun test(){
-            val test = com.zigzag.crm.usecase.feature.user.dto.CrmUserDto.Request.Create("test", "test", "test");
-        }
     }
     enum class Response {;
         data class Public(
