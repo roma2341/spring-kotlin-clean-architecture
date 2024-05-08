@@ -6,13 +6,14 @@ import org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRe
 import reactor.core.publisher.Flux
 
 interface ProductElasticRepository: ReactiveElasticsearchRepository<ProductElasticDocument, String> {
-    @Query("""{
-  "query": {
-    "match": {
-      "_all": "?0"
-    }
-  }
-}
+    @Query("""
+ {
+      "query": {
+        "match": {
+          "_all": "?0"
+        }
+      }
+ }
     """)
     fun findByAllUsingCustomQuery(name: String, pageable: Pageable): Flux<ProductElasticDocument>
 }

@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="ServiceRegistryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" folderName="Default" nameIsGenerated="true">
+  <configuration default="false" name="ServiceRegistryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" folderName="Infrastructure" nameIsGenerated="true">
     <module name="crm-clean-architecture.service_registry.main" />
     <option name="SPRING_BOOT_MAIN_CLASS" value="com.zigzag.crm.application.ServiceRegistryApplication" />
     <method v="2">

@@ -1,6 +1,7 @@
 server.port: 8761
 eureka:
   client:
+    registry-fetch-interval-seconds: 10
     registerWithEureka: false
     fetchRegistry: false
 spring.cloud.config.enabled: false

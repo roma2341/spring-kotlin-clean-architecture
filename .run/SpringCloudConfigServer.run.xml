@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="SpringCloudConfigServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" folderName="Default" nameIsGenerated="true">
+  <configuration default="false" name="SpringCloudConfigServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" folderName="Infrastructure" nameIsGenerated="true">
     <module name="crm-clean-architecture.config_service.main" />
     <option name="SPRING_BOOT_MAIN_CLASS" value="com.zigzag.crm.SpringCloudConfigServer" />
     <method v="2">
