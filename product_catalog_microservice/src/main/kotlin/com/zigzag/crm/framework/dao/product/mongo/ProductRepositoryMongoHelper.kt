@@ -1,4 +1,4 @@
-package com.zigzag.crm.framework.dao.lead.mongo
+package com.zigzag.crm.framework.dao.product.mongo
 
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository
 import org.springframework.stereotype.Repository

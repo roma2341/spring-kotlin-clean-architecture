@@ -1,6 +1,6 @@
-package com.zigzag.crm.framework.dao.lead.elastic.mapper
+package com.zigzag.crm.framework.dao.product.elastic.mapper
 
-import com.zigzag.crm.framework.dao.lead.elastic.ProductElasticDocument
+import com.zigzag.crm.framework.dao.product.elastic.ProductElasticDocument
 import com.zigzag.crm.framework.domain.api.features.lead.Product
 
 interface ProductDocumentElasticMapper {

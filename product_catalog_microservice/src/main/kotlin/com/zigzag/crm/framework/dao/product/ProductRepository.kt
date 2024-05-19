@@ -1,11 +1,11 @@
-package com.zigzag.crm.framework.dao.lead
+package com.zigzag.crm.framework.dao.product
 
 import com.zigzag.crm.framework.domain.api.features.lead.IProductRepository
 import com.zigzag.crm.framework.domain.api.features.lead.Product
-import com.zigzag.crm.framework.dao.lead.elastic.ProductElasticRepository
-import com.zigzag.crm.framework.dao.lead.elastic.mapper.ProductDocumentElasticMapper
-import com.zigzag.crm.framework.dao.lead.mongo.mapper.ProductDocumentMongoMapper
-import com.zigzag.crm.framework.dao.lead.mongo.ProductRepositoryMongoHelper
+import com.zigzag.crm.framework.dao.product.elastic.ProductElasticRepository
+import com.zigzag.crm.framework.dao.product.elastic.mapper.ProductDocumentElasticMapper
+import com.zigzag.crm.framework.dao.product.mongo.mapper.ProductDocumentMongoMapper
+import com.zigzag.crm.framework.dao.product.mongo.ProductRepositoryMongoHelper
 import org.springframework.data.domain.PageRequest
 import org.springframework.stereotype.Component
 import reactor.core.publisher.Flux

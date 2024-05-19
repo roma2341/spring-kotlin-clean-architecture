@@ -1,4 +1,4 @@
-package com.zigzag.crm.framework.dao.lead.elastic
+package com.zigzag.crm.framework.dao.product.elastic
 
 import org.springframework.data.annotation.Id
 import org.springframework.data.elasticsearch.annotations.Document
