@@ -2,6 +2,7 @@ package com.zigzag.crm.domain.order
 
 import com.zigzag.crm.domain.enums.PaymentStatus
 import com.zigzag.crm.domain.order.enums.OrderStatus
+import com.zigzag.crm.domain.shipping.Shipping
 
 data class Order(
     val id: String? = null,
@@ -12,5 +13,5 @@ data class Order(
     val customId: String? = null,
     val currency: String? = null,
     val items: Set<String>,
-    val shippings: Set<String>,
+    val shipping: Shipping
 )
