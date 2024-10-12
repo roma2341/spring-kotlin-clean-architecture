@@ -13,12 +13,6 @@ class LeadMapperImpl : LeadMapper {
             email = leadDto.email
         )
     }
-    override fun convertDtoToEntity(leadDto: LeadDto.Request.Search): Lead {
-        return Lead(
-            firstName = leadDto.firstName,
-            lastName = leadDto.lastName,
-        )
-    }
     override fun convertEntityToDto(lead: Lead): LeadDto.Response.Public {
         return LeadDto.Response.Public(
             firstName = lead.firstName,

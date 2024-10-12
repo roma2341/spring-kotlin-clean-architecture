@@ -5,7 +5,6 @@ import com.zigzag.crm.usecase.lead.dto.LeadDto
 
 interface  LeadMapper {
        fun convertDtoToEntity(leadDto: LeadDto.Request.Create): Lead
-       fun convertDtoToEntity(leadDto: LeadDto.Request.Search): Lead
        fun convertEntityToDto(lead: Lead): LeadDto.Response.Public
 }
 

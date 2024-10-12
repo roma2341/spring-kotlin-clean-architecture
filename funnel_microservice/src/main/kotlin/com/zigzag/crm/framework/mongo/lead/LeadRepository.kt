@@ -4,6 +4,7 @@ import com.zigzag.crm.framework.domain.api.features.lead.ILeadRepository
 import com.zigzag.crm.framework.domain.api.features.lead.Lead
 import com.zigzag.crm.framework.mongo.lead.mapper.LeadDocumentMapper
 import org.springframework.data.domain.Example
+import org.springframework.data.domain.Pageable
 import org.springframework.stereotype.Component
 import reactor.core.publisher.Flux
 import reactor.core.publisher.Mono
@@ -33,13 +34,12 @@ class LeadRepository(
         return leadRepositoryMongoHelper.findById(id).map { u -> leadDocumentMapper.convertDocumentToEntity(u) }
     }
 
-    override fun findAll(): Flux<Lead> {
-        return leadRepositoryMongoHelper.findAll().map { u -> leadDocumentMapper.convertDocumentToEntity(u)}
+    override fun findAll(pageable: Pageable): Flux<Lead> {
+        return leadRepositoryMongoHelper.findBy(pageable).map { u -> leadDocumentMapper.convertDocumentToEntity(u)}
     }
 
-    override fun find(lead: Lead): Flux<Lead> {
-        var document = leadDocumentMapper.convertEntityToDocument(lead);
-        return leadRepositoryMongoHelper.findAll(Example.of(document)).map{ doc -> leadDocumentMapper.convertDocumentToEntity(doc)};
-    };
+    override fun count(): Mono<Long> {
+        return leadRepositoryMongoHelper.count();
+    }
 
 }

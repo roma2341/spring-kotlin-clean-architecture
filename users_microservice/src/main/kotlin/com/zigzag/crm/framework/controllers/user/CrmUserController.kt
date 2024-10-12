@@ -17,11 +17,6 @@ class CrmUserController(
     private val usecaseFindAllUsers: Usecase_FindAllUsers
 ){
 
-    @PostConstruct
-    fun postConstruct(){
-        System.out.println("constucted");
-    }
-
     @PostMapping
     fun addUser(@RequestBody userModel: CrmUserDto.Request.Create): Mono<CrmUserDto.Response.Public> {
         return usecaseCreateUser.execute(userModel);

@@ -16,11 +16,6 @@ enum class LeadDto{;
                               override var email: String? = null): FirstName,
             LastName,
             Email;
-        public data class Search(
-            override var firstName: String?,
-            override var lastName: String?
-        ): FirstName,
-            LastName
     }
     enum class Response {;
         data class Public(

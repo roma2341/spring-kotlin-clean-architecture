@@ -1,7 +1,7 @@
 package com.zigzag.crm.framework.graphql.lead.query;
 
 import com.zigzag.crm.usecase.lead.api.Usecase_FindLeadById;
-import com.zigzag.crm.usecase.lead.api.Usecase_FindLeads;
+import com.zigzag.crm.usecase.lead.api.Usecase_FindAllLeads;
 import com.zigzag.crm.usecase.lead.dto.LeadDto;
 import com.zigzag.crm.usecase.lead.mapper.LeadMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,7 @@ import reactor.core.publisher.Mono;
 public class LeadQuery {
 
     @Autowired
-    private Usecase_FindLeads usecaseFindLeads;
+    private Usecase_FindAllLeads usecaseFindLeads;
     @Autowired
     private Usecase_FindLeadById usecaseFindLeadById;
     @Autowired
