@@ -5,6 +5,7 @@ import com.zigzag.crm.usecase.lead.api.Usecase_AcceptLead
 import com.zigzag.crm.usecase.lead.api.Usecase_FindLeadById
 import com.zigzag.crm.usecase.lead.api.Usecase_FindAllLeads
 import com.zigzag.crm.usecase.lead.api.Usecase_FindSuitableAgentForLead
+import com.zigzag.crm.usecase.lead.dto.AcceptLeadArgs
 import com.zigzag.crm.usecase.lead.dto.LeadDto
 import org.springframework.data.domain.Pageable
 import org.springframework.web.bind.annotation.*
@@ -31,8 +32,9 @@ class LeadController(
     fun getLeads(pageable: Pageable): Flux<LeadDto.Response.Public> {
         return usecaseFindLeads.execute(pageable);
     }
-    @PostMapping("/accept/free")
-    fun acceptFreeLead(){
-        usecaseAcceptFreeLead.execute();
+    @PostMapping("/accept")
+    fun acceptFreeLead(@RequestParam("leadId") leadId: String,
+                       @RequestParam("agentId") agentId: String): Mono<Nothing> {
+        return usecaseAcceptFreeLead.execute(AcceptLeadArgs(leadId,agentId));
     }
 }
