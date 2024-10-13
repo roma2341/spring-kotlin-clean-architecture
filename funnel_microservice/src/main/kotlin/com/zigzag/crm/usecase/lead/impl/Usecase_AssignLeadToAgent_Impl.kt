@@ -1,5 +1,6 @@
 package com.zigzag.crm.usecase.lead.impl
 
+import com.zigzag.crm.domain.lead.enums.LeadAssignementStatus
 import com.zigzag.crm.framework.domain.api.features.lead.ILeadRepository
 import com.zigzag.crm.framework.domain.api.features.lead.Lead
 import com.zigzag.crm.usecase.lead.api.Usecase_AssignLeadToAgent
@@ -19,6 +20,7 @@ class Usecase_AssignLeadToAgent_Impl(
             .switchIfEmpty(Mono.error(ResponseStatusException(HttpStatus.NOT_FOUND, "Lead not found")))
             .doOnNext {
                     it.agentId = arg.agentId
+                    it.assignmentStatus = LeadAssignementStatus.PENDING_APPROVAL
                     leadRepository.updateLead(it)
             }
     }

@@ -18,7 +18,7 @@ class LeadMapperImpl : LeadMapper {
             firstName = lead.firstName,
             lastName = lead.lastName,
             email = lead.email,
-            leadFunnelStatus = lead.leadFunnelStatus,
+            leadStep = lead.leadStep,
             id = lead.id
         )
     }
