@@ -7,6 +7,6 @@ import reactor.core.publisher.Flux
 
 @ReactiveFeignClient(name = "users-microservice")
 interface CrmUserRestClient {
-    @GetMapping("api/users/v1")
+    @GetMapping("api/users")
     fun getUsers(): Flux<CrmUserDto.Response.Public>
 }
