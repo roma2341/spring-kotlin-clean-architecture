@@ -12,7 +12,7 @@ import reactor.core.publisher.Flux
 import reactor.core.publisher.Mono
 
 @RestController
-@RequestMapping("api/lead/v1")
+@RequestMapping("api/leads/v1")
 class LeadController(
     private val usecaseFindLeadById: Usecase_FindLeadById,
     private val usecaseFindSuitableAgentForLead: Usecase_FindSuitableAgentForLead,

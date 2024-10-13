@@ -37,7 +37,7 @@ fun routeLocator(builder: RouteLocatorBuilder): RouteLocator {
         }
         .route { r: PredicateSpec ->
             r.path(
-                "/users-microservice/api/user"
+                "/users-microservice/api/users"
             ).and().method(HttpMethod.GET).uri("lb://users-microservice")
         }
         .route { r: PredicateSpec ->
@@ -47,7 +47,7 @@ fun routeLocator(builder: RouteLocatorBuilder): RouteLocator {
         }
         .route { r: PredicateSpec ->
             r.path(
-                "/product-catalog-microservice/api/product"
+                "/product-catalog-microservice/api/products"
             ).and().method(HttpMethod.GET).uri("lb://product-catalog-microservice")
         }
         .build()
