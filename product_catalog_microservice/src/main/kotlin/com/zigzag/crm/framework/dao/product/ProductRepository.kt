@@ -2,8 +2,6 @@ package com.zigzag.crm.framework.dao.product
 
 import com.zigzag.crm.framework.domain.api.features.lead.IProductRepository
 import com.zigzag.crm.framework.domain.api.features.lead.Product
-import com.zigzag.crm.framework.dao.product.elastic.ProductElasticRepository
-import com.zigzag.crm.framework.dao.product.elastic.mapper.ProductDocumentElasticMapper
 import com.zigzag.crm.framework.dao.product.mongo.mapper.ProductDocumentMongoMapper
 import com.zigzag.crm.framework.dao.product.mongo.ProductRepositoryMongoHelper
 import org.springframework.data.domain.PageRequest
@@ -14,9 +12,7 @@ import reactor.core.publisher.Mono
 @Component
 class ProductRepository(
     private val productRepositoryMongoHelper: ProductRepositoryMongoHelper,
-    private val productDocumentMongoMapper: ProductDocumentMongoMapper,
-    private val productElasticRepository: ProductElasticRepository,
-    private val productElasticMapper: ProductDocumentElasticMapper
+    private val productDocumentMongoMapper: ProductDocumentMongoMapper
 ) : IProductRepository {
     override fun updateProduct(product: Product): Mono<Product> {
         if(product.id == null) {
@@ -43,8 +39,7 @@ class ProductRepository(
     }
 
     override fun find(searchTerms: String): Flux<Product> {
-        return productElasticRepository.findByAllUsingCustomQuery(searchTerms, PageRequest.of(0,25))
-            .map{ doc -> productElasticMapper.convertDocumentToEntity(doc)};
+        return productRepositoryMongoHelper.findAll().map { u -> productDocumentMongoMapper.convertDocumentToEntity(u)};
     };
 
 }
