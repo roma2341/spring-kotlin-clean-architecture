@@ -1,4 +1,4 @@
-package com.zigzag.crm.framework.controllers.user
+package com.zigzag.crm.framework.controllers.notification
 
 import com.zigzag.crm.usecase.feature.user.api.Usecase_CreateUser
 import com.zigzag.crm.usecase.feature.user.api.Usecase_FindAllUsers
