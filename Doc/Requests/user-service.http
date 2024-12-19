@@ -1,0 +1,11 @@
+### Add User
+POST http://localhost:8081/api/users
+Content-Type: application/json
+
+{
+  "firstName": "Roma",
+  "lastName": "Test",
+  "email": "zigzag2341@gmail.com"
+}
+
+###
