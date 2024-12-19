@@ -4,5 +4,5 @@ import com.zigzag.crm.usecase.feature.user.dto.CrmUserDto
 import org.zigzag.crm.common.usecase.CrmUsecase
 import reactor.core.publisher.Mono
 
-interface Usecase_SuspendUser: CrmUsecase<Mono<CrmUserDto.Response.Public>, String> {
+interface Usecase_SendConfirmationEmail: CrmUsecase<Mono<CrmUserDto.Response.Public>, String> {
 }

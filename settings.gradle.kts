@@ -12,6 +12,7 @@ pluginManagement {
         id("com.google.devtools.ksp") version  "1.9.23-1.0.20" apply false //"1.9.23-1.0.20"
     }
 }
+include("notification_microservice")
 include("users_microservice")
 include("funnel_microservice")
 include("product_catalog_microservice")
